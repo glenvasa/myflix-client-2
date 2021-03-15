@@ -4,11 +4,22 @@
   background: white;
   z-index: 1000 !important;
   position: fixed;
-  top: -78px;
+  top: -75px !important;
   left: 380px;
   border: 2px inset black;
   font-family: Abril Fatface;
   color: white;
   font-weight: bolder;
+
+}
+
+.filter-container {
+  background-color: transparent;
+  height: 50px;
+  width: 40%;
+  position: fixed;
+  top: 10px;
+  left: 300px;
+  z-index: 2000;
 
 }
