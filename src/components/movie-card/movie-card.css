@@ -1,7 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 
-body {
-  background-color: #e4ecf2;
-  font-family: staatliches;
+/* .card-title {
+  text-align: center;
+} */
+
+.movie-card {
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px white;
+  /* background-image: url("image.png");
+  background-size: cover; */
+  background-color: black;
+  /* z-index: -30; */
+  padding: 20px 20px 0px !important;
+} 
+
+.movie-title {
+  font-family: Abril Fatface !important;
+  margin: 0px 0 20px !important;
+  font-size: 24px !important;
+  text-transform: uppercase;
+  background-color: black;
+
+  color: rgb(226, 171, 171);
+  text-shadow: 10px 10px 20px white;
+  text-align: center;
 }
 
+.movie-image {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  /* box-shadow: 2px 2px 2px black; */
+  padding: 5px;
+  /* background-color: rgba(128, 128, 128, 0.5); */
+  /* background-color: #510916; */
+  background-color: white;
+  border-radius: 0px !important;
+}
+
+.movie-card-button{
+  font-family: Abril Fatface;
+  font-size: 20px;
+  margin: 0 auto;
+  z-index: 1000;
+  text-decoration: none !important;
+  text-shadow: 1px 1px 1px white;
+  transition: all .3s ease-in-out;
+}
+
+.movie-card-button:hover {
+  color: rgb(226, 171, 171) !important;
+  
+}
+
+.movie-card-body {
+ text-align: center;
+}
