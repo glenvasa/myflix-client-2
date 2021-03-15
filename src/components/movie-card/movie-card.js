@@ -26,7 +26,6 @@ export class MovieCard extends React.Component {
           <Link to={`/movies/${movie._id}`}>
             <Button
               variant="link"
-              style={{ background: "#510916", color: "rgba(0,0,0,.5)", width: "90%" }}
               className="movie-card-button"
             >
               Movie Details
