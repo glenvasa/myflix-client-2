@@ -12,7 +12,7 @@ function VisibilityFilterInput(props) {
     <Form.Control
       onChange={(e) => props.setFilter(e.target.value)}
       value={props.VisibiltyFilter}
-      placeholder="Search Movies"
+      placeholder="Search Movies..."
       className="visibility-filter"
     />
   );
