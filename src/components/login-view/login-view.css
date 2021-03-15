@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Staatliches&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/* bg-image radial gradient colors
+color1: #3244cb
+color2: #440951 */
+
+body {
+  /* background-color: #e4ecf2; */
+  font-family: staatliches;
+  background-image: url("image.png");
+  background-size: cover;
+}
+
+h2 {
+  font-family: Abril Fatface;
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 400%;
+  text-shadow: 5px 5px 2px black;
+}
+
+form {
+  width: 550px;
+  /* height: 450px; */
+  margin: auto;
+  position: relative;
+}
+
+.login-form {
+  border: 4px solid #440951;
+  background: rgba(128, 128, 128, 0.5);
+  padding: 30px 0px 40px;
+}
+
+.form-label-username {
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 110px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.form-label-password {
+  color: white;
+  position: absolute;
+  top: 120px;
+  left: 110px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.login-item {
+  color: white;
+  font-family: Abril Fatface;
+}
+
+input {
+  width: 375px;
+  height: 25px;
+  margin-bottom: 1em;
+}
+
+.login-buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button-login {
+  background-color: #510916;
+  /* background-color: #3c0960; */
+  width: 130px;
+  font-family: Abril Fatface;
+  margin-right: 10px !important;
+  box-shadow: 2px 2px 2px black;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.button-register {
+  width: 130px;
+  font-family: Abril Fatface;
+  background-color: #510916;
+  box-shadow: 2px 2px 2px black;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.button-login:hover,
+.button-register:hover {
+  color: #510916;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.login-view {
+  background: transparent;
+  width: 100%;
+}
+
+.form-input {
+  position: relative;
+  width: 60%;
+  margin: 40px auto;
+}
+
+#formBasicUsername {
+  color: white;
+  background-color: #440951;
+  opacity: 0.55;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+#formBasicPassword {
+  color: white;
+  background-color: #440951;
+  opacity: 0.55;
+  box-shadow: 2px 2px 2px 2px black;
+}
