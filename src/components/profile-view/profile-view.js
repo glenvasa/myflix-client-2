@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import NavBar from '../navbar/navbar'
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -92,6 +93,8 @@ export class ProfileView extends React.Component {
     );
 
     return (
+      <>
+      <NavBar/>
       <Container>
         {/* <h2 className="profile-title">Profile Page of {this.state.Username}</h2> */}
         <Card className="profile-view">
@@ -156,6 +159,7 @@ export class ProfileView extends React.Component {
           })}
         </Container>
       </Container>
+      </>
     );
   }
 }
