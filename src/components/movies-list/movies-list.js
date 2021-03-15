@@ -7,6 +7,7 @@ import { MovieCard } from "../movie-card/movie-card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import NavBar from "../navbar/navbar";
+import "./movies-list.css"
 
 const mapStateToProps = (state) => {
   const { visibilityFilter } = state;
@@ -28,7 +29,11 @@ function MoviesList(props) {
   return (
     <>
       <NavBar />
-      <VisibilityFilterInput visibilityFilter={visibilityFilter} />
+      {/* <div className="spacer">S</div>
+      <div className="spacer">S</div>
+      <div className="spacer">S</div>
+      <div className="spacer">S</div> */}
+      <VisibilityFilterInput visibilityFilter={visibilityFilter} className="filter" />
       <div className="movies-list p-2">
         {/* <Container> */}
         <Row>
