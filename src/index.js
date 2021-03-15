@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import MainView from './components/main-view/main-view';
+import moviesApp from './reducers/reducers';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Import statement to indicate that you need to bundle `./index.scss`
+import './index.scss';
+
+const store = createStore(moviesApp, devToolsEnhancer());
+
+// Main component (will eventually use all the others)
+class MyFlixApplication extends React.Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <MainView />
+      </Provider>
+    );
+  }
+}
+
+// Finds the root of your app
+const container = document.getElementsByClassName('app-container')[0];
+
+// Tells React to render your app in the root DOM element
+ReactDOM.render(React.createElement(MyFlixApplication), container);
