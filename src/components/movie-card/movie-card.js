@@ -16,17 +16,18 @@ export class MovieCard extends React.Component {
 
     return (
       <Card
-        style={{ width: "16rem" }}
-        className="movie-card mt-3 border border-dark rounded"
-      >
-        <Card.Img variant="top" src={movie.ImagePath} />
-        <Card.Body>
-          <Card.Title>{movie.Title}</Card.Title>
-          <Card.Text>{movie.Description}</Card.Text>
+        style={{ width: "17rem", backgroundColor: "black" }}
+        className="movie-card mt-3 rounded"
+      ><Card.Title className='movie-title'>{movie.Title}</Card.Title>
+        <Card.Img variant="top" src={movie.ImagePath}  className="movie-image"/>
+        <Card.Body className="movie-card-body">
+          
+          {/* <Card.Text>{movie.Description}</Card.Text> */}
           <Link to={`/movies/${movie._id}`}>
             <Button
               variant="link"
-              style={{ background: "#690f38", color: "white", width: "90%" }}
+              style={{ background: "#510916", color: "rgba(0,0,0,.5)", width: "90%" }}
+              className="movie-card-button"
             >
               Movie Details
             </Button>
