@@ -1,4 +1,14 @@
 .visibility-filter {
-  width: 97%;
-  margin: 80px auto 0px;
+  width: 40%;
+  margin: 100px auto 0px;
+  background: white;
+  z-index: 1000 !important;
+  position: fixed;
+  top: -78px;
+  left: 380px;
+  border: 2px inset black;
+  font-family: Abril Fatface;
+  color: white;
+  font-weight: bolder;
+
 }
