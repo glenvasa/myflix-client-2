@@ -1,27 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
 
 .genre-card {
-  margin: 10em auto;
-  width: 50%;
+  border: 2px solid white;
+  box-shadow: 4px 2px 5px white;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  margin-top: 100px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
-.genreview-home-button {
-  margin-left: 45%;
-  margin-bottom: 5px;
+.genreview-back-button {
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  background-color: #510916;
+  color: rgb(226, 171, 171);
+  /* box-shadow: 2px 2px 2px rgb(226, 171, 171); */
+  width: 150px;
+  height: 40px;
+  
+  margin: 3px auto 10px !important;
+  border: 2px outset rgb(226, 171, 171);
+}
+
+
+.genreview-back-button:hover {
+  background-color: rgba(226, 171, 171);
+  color: #510916;
+  /* box-shadow: 2px 2px 2px #510916; */
+  border: 2px outset #510916;
 }
 
 .genre-description {
   font-size: 25px;
-  font-family: 'Big Shoulders Inline Text'
+  font-family: Abril Fatface;
+  color: rgba(256,256,256,.9);
+  text-shadow: 3px 3px 15px black;
   
 }
 
 .genre-name {
-  color: #8a0303;
+  font-family: Abril Fatface;
+  color: rgb(226, 171, 171);
+  text-shadow: 3px 3px 2px rgba(206, 89, 55, 1);
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Big Shoulders Inline Text';
+
   text-align: center;
 }
