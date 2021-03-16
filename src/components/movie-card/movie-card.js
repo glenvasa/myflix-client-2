@@ -19,7 +19,10 @@ export class MovieCard extends React.Component {
         style={{ width: "22rem", height: "38rem", backgroundColor: "black" }}
         className="movie-card mt-3 rounded"
       ><Card.Title className='movie-title'>{movie.Title}</Card.Title>
-        <Card.Img variant="top" src={movie.ImagePath}  className="movie-image"/>
+       <Link to={`/movies/${movie._id}`}>
+         <Card.Img variant="top" src={movie.ImagePath}  className="movie-image"/>
+       </Link>
+        
         <Card.Body className="movie-card-body">
           
           {/* <Card.Text>{movie.Description}</Card.Text> */}
