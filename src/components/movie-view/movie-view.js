@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
 import "./movie-view.css";
+import NavBar from "../navbar/navbar";
+import Card from "react-bootstrap/Card";
 
 export class MovieView extends React.Component {
   constructor() {
@@ -35,65 +37,60 @@ export class MovieView extends React.Component {
     if (!movie) return null;
 
     return (
-      <div className="movie-view">
-        <section className="movie-poster-section">
-          <img
-            className="movie-poster"
-            src={movie.ImagePath}
-            alt="movie-poster"
-          />
-          <div className="movie-poster-buttons">
-            <Button
-              onClick={() => this.addToFavoriteMovies(movie)}
-              className="button-add-favorite"
-              style={{ background: "#690f38" }}
+      <>
+        <NavBar />
+        <div className="movie-view">
+          <section className="movie-view-card">
+            <Card
+      
+              className="movie-card mv-card mt-3 rounded"
             >
-              Add to Favorite Movies
-            </Button>
-            <Link to={"/"}>
-              <Button className="home-button" style={{ background: "#690f38" }}>
-                Home
-              </Button>
-            </Link>
-          </div>
-        </section>
-        <section className="movie-info">
-          <div className="movie-title">
-            <span className="label">Title: </span>
-            <span className="value">{movie.Title}</span>
-          </div>
-          <div className="movie-description">
-            <span className="label">Description: </span>
-            <span className="value">{movie.Description}</span>
-          </div>
-          <div className="movie-genre">
-            <span className="label">Genre: </span>
-            <span className="value">{movie.Genre.Name}</span>
-            <Link to={`/genres/${movie.Genre.Name}`}>
-              <Button
-                variant="link"
-                className="genre-button"
+              <Card.Title className="movie-title">{movie.Title}</Card.Title>
+              <Card.Img
+                variant="top"
+                src={movie.ImagePath}
+                className="movie-view-image"
+              />
+             
+
+              <Card.Body className="movie-card-body">
+            <div className="movie-view-buttons">
+              <div className="movie-director">
+                {/* <span className="label">Director: </span>
+                <span className="value">{movie.Director.Name}</span> */}
+                <Link to={`/directors/${movie.Director.Name}`}>
+                  <Button className="director-button">Director Info</Button>
+                </Link>
+              </div>
+              <div className="movie-genre">
+                {/* <span className="label">Genre: </span>
+                <span className="value">{movie.Genre.Name}</span> */}
+                <Link to={`/genres/${movie.Genre.Name}`}>
+                  <Button className="genre-button"> Genre Info</Button>
+                </Link>
+              </div>
+            </div>
+             <Button
+                onClick={() => this.addToFavoriteMovies(movie)}
+                className="button-add-favorite"
                 style={{ background: "#690f38" }}
               >
-                Genre Info
+                Add to Favorites
               </Button>
-            </Link>
-          </div>
-          <div className="movie-director">
-            <span className="label">Director: </span>
-            <span className="value">{movie.Director.Name}</span>
-            <Link to={`/directors/${movie.Director.Name}`}>
-              <Button
-                variant="link"
-                className="director-button"
-                style={{ background: "#690f38" }}
-              >
-                Director Info
-              </Button>
-            </Link>
-          </div>
-        </section>
-      </div>
+              </Card.Body>
+             
+            </Card>
+          </section>
+          <section className="movie-info">
+            {" "}
+            
+            <div className="movie-description">
+              {/* <span className="label">Description: </span> */}
+              <span className="value">{movie.Description}</span>
+            </div>
+          </section>
+        </div>
+      </>
     );
   }
 }
