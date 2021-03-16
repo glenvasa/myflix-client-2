@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import NavBar from '../navbar/navbar'
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 // import Container from 'react-bootstrap/Container';
@@ -22,6 +22,8 @@ export class GenreView extends React.Component {
     if (!genre) return <div className="main-view" />;
 
     return (
+      <>
+      <NavBar/>
       <div className="genre-view">
         <Card style={{ width: "45 rem" }} className="genre-card">
           <Card.Body>
@@ -42,6 +44,7 @@ export class GenreView extends React.Component {
           </Link>
         </Card>
       </div>
+      </>
     );
   }
 }
