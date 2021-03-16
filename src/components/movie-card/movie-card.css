@@ -58,21 +58,21 @@
   text-decoration: none !important;
   /* text-shadow: 1px 1px 1px white; */
   transition: all 0.3s ease-in-out;
-  color: #510916;
-  background-color: rgb(226, 171, 171);
+  background-color: #510916;
+  color: rgb(226, 171, 171);
   /* box-shadow: 2px 2px 2px rgb(226, 171, 171); */
   width: 150px;
   height: 40px;
   margin-top: 3px;
   margin-bottom: 10px !important;
-  border: 2px outset #510916;
+  border: 2px outset rgb(226, 171, 171);
 }
 
 .movie-card-button:hover {
-  color: rgba(226, 171, 171);
-  background-color: #510916;
+  background-color: rgba(226, 171, 171);
+  color: #510916;
   /* box-shadow: 2px 2px 2px #510916; */
-  border: 2px outset rgba(226,171,171)
+  border: 2px outset #510916;
 }
 
 .movie-card-body {
