@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import NavBar from '../navbar/navbar'
+import NavBar from "../navbar/navbar";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 // import Container from 'react-bootstrap/Container';
@@ -18,32 +18,33 @@ export class GenreView extends React.Component {
 
   render() {
     const { genre } = this.props;
-
     if (!genre) return <div className="main-view" />;
+
+    let id = localStorage.getItem("id");
 
     return (
       <>
-      <NavBar/>
-      <div className="genre-view">
-        <Card style={{ width: "45 rem" }} className="genre-card">
-          <Card.Body>
-            <Card.Title className="genre-name">{genre.Name}</Card.Title>
-            <Card.Text className="genre-description">
-              {genre.Description}
-            </Card.Text>
-          </Card.Body>
+        <NavBar />
+        <div className="genre-view">
+          <Card style={{ width: "45 rem" }} className="genre-card">
+            <Card.Body>
+              <Card.Title className="genre-name">{genre.Name}</Card.Title>
+              <Card.Text className="genre-description">
+                {genre.Description}
+              </Card.Text>
+            </Card.Body>
 
-          <Link to={"/"}>
-            {/* <Link to={`/movies/${movie._id}`}> */}
-            <Button
-              className="genreview-home-button"
-              style={{ background: "#690f38" }}
-            >
-              Home
-            </Button>
-          </Link>
-        </Card>
-      </div>
+            <Link to={`/movies/${id}`}>
+              <Button
+                className="genreview-back-button"
+                // onClick={(() => {
+                //   Router.history.back()})}
+              >
+                Back
+              </Button>
+            </Link>
+          </Card>
+        </div>
       </>
     );
   }
