@@ -32,9 +32,14 @@ export class DirectorView extends React.Component {
             <Card.Body className="dir-card-body">
               <Card.Title className="dir-name">{director.Name}</Card.Title>
               <Card.Text className="dir-bio">{director.Bio}</Card.Text>
-              
-              <Card.Text className="dir-born">Born: {director.Birth}</Card.Text>
-              <Card.Text className="dir-died">Died: {director.Death}</Card.Text>
+              <div className="birth-death-container">
+                <Card.Text className="dir-born">
+                  Born: {director.Birth}
+                </Card.Text>
+                <Card.Text className="dir-died">
+                  Died: {director.Death}
+                </Card.Text>
+              </div>
             </Card.Body>
             {/* <Link to={"/"}> */}
             <div className="dirview-button-container">
