@@ -1,19 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Staatliches&display=swap");
 
+
+
 .movie-view {
   display: grid;
   margin-top: 100px;
-  grid-template-columns: repeat(5, 1fr);
- margin-left: 30%;
- margin-right: 30%;
+  grid-template-columns: repeat(3, 1fr);
+ 
+}
+
+.movie-view-content {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+.movie-view-buttons {
+  border: 2px solid white;
+  box-shadow: 4px 2px 5px white;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  padding-top: 10px;
+  margin: 0px auto 0px;
+  border-radius: 3px;
 }
 
 .mv-card {
   /* margin: 100px auto 0px !important; */
-  height: 710px !important;
+  height: 600px !important;
   width: 400px;
+  margin-top: 0px !important;
 }
 
+/* .movie-info {
+  height: 100px;
+} */
 /* .movie-poster-section {
   /* float: left; */
   /* text-align: center;
@@ -78,17 +100,21 @@
 
 .movie-description {
   font-family: Abril Fatface;
-  margin: auto;
-  margin-bottom: 10px;
-  width: 130%;
+  margin: 0px 30px;
+  width: 400px;
   font-size: 20px;
   color: rgba(256,256,256,.9);
   text-shadow: 3px 3px 15px black;
   /* background-color: black; */
   text-align: normal;
+  border: 2px solid white;
+  box-shadow: 4px 2px 5px white;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  padding: 20px !important;
+  border-radius: 3px;
 }
 
-.movie-view-buttons {
+.genre-director-buttons {
   display: flex;
   justify-content: space-around;
   padding-right: 20px;
