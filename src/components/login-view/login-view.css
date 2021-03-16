@@ -5,12 +5,17 @@
 color1: #3244cb
 color2: #440951 */
 
+
+
 body {
   /* background-color: #e4ecf2; */
   /* font-family: staatliches; */
   background-image: url("image.png");
+  /* background-image: url("theater-4023278_1920.jpg"); */
   background-size: cover;
 }
+
+
 
 h2 {
   font-family: Abril Fatface;
@@ -31,9 +36,11 @@ form {
 
 .login-form {
   border: 4px solid #440951;
-  background: rgba(128, 128, 128, 0.7);
+  box-shadow: 1px 1px 1px 1px #440951;
+  /* background: rgba(128, 128, 128, 0.4); */
   padding: 30px 0px 40px;
   border-radius: 10px;
+  background-image: url("image.png");
 }
 
 .form-label-username {
@@ -64,35 +71,41 @@ input {
 }
 
 .login-buttons {
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 10px !important;
   text-align: center;
 }
 
 .button-login {
   background-color: #510916;
+  /* background-image: url("theater-4023278_1920.jpg"); */
   /* background-color: #3c0960; */
   width: 130px;
   font-family: Abril Fatface;
   margin-right: 10px !important;
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
-  border: 1px solid black;
+  /* border: 1px solid white; */
+  border: none !important
 }
 
 .button-register {
   width: 130px;
   font-family: Abril Fatface;
   background-color: #510916;
+  /* background-image: url("theater-4023278_1920.jpg"); */
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
-  border: 1px solid black;
+  /* border: 1px solid white; */
+  border: none !important
 }
 
 .button-login:hover,
 .button-register:hover {
-  color: #510916;
+  /* transform: scaleX() scaleY(); */
+  color: #440951;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #440951;
 }
 
 .login-view {
