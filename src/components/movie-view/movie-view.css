@@ -3,17 +3,18 @@
 
 
 .movie-view {
-  display: grid;
+  display: flex;
+  /* display: grid */
   margin-top: 100px;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  /* grid-template-columns: repeat(3, 1fr); */
  
 }
 
 .movie-view-content {
 
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly !important;
  
 }
 
@@ -29,7 +30,7 @@
 .mv-card {
   /* margin: 100px auto 0px !important; */
   height: 600px !important;
-  width: 400px;
+  width: 380px;
   margin-top: 0px !important;
 }
 
@@ -84,10 +85,10 @@
 }
 
 .movie-view-image {
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border: 1px solid white;
+  /* border-top: 1px solid white;
   border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-right: 1px solid white; */
   box-shadow: none !important;
   height: 500px !important;
   /* padding: 5px; */
