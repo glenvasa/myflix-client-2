@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import NavBar from '../navbar/navbar'
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 // import Container from 'react-bootstrap/Container';
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
 import "./director-view.css";
+import { Navbar } from "react-bootstrap";
 
 export class DirectorView extends React.Component {
   constructor() {
@@ -22,6 +23,8 @@ export class DirectorView extends React.Component {
     if (!director) return <div className="main-view" />;
 
     return (
+      <>
+      <NavBar/>
       <div className="director-view">
         <Card style={{ width: "45 rem" }} className="director-card">
           <Card.Body>
@@ -42,6 +45,7 @@ export class DirectorView extends React.Component {
           </Link>
         </Card>
       </div>
+      </>
     );
   }
 }
