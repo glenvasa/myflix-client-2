@@ -64,7 +64,7 @@ export function LoginView(props) {
 
   return (
     <div className="login-view">
-      <h2>Welcome to MYFLIX</h2>
+      <h2>Welcome to MYFLIX!</h2>
 
       <Form className="login-form">
         <Form.Group controlId="formBasicUsername" className="login-item m-auto">
