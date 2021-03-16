@@ -59,8 +59,14 @@
   text-shadow: 3px 3px 15px black;
 }
 
+.birth-death-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .dir-born,
 .dir-died {
   font-size: 20px;
   color: rgba(206, 89, 55, 1);
+  text-shadow: 1px 1px 1px rgb(226, 171, 171);
 }
