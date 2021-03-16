@@ -54,11 +54,33 @@
   /* text-shadow: 1px 1px 1px white; */
   transition: all 0.3s ease-in-out;
  
-  border: 2px outset #510916;
+  border: 2px outset rgb(226, 171, 171) !important;
   width: 180px;
   height: 40px;
-  color: #510916;
-  background-color: rgb(226, 171, 171) !important;
+  background-color: #510916 !important;
+  color: rgb(226, 171, 171) !important;
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  font-family: Abril Fatface;
+  font-size: 20px;
+  margin: 0px auto 10px !important;
+  text-decoration: none !important;
+  /* text-shadow: 1px 1px 1px white; */
+  transition: all 0.3s ease-in-out;
+ 
+  border: 2px outset rgb(226, 171, 171);
+  width: 80px;
+  height: 40px;
+  color: rgb(226, 171, 171);
+  background-color: #510916!important;
+}
+
+.favorites-home-buttons{
+  display: flex;
+  justify-content: space-evenly !important;
 }
 
 .movie-view-image {
@@ -157,9 +179,9 @@
   text-decoration: none !important;
  
   transition: all 0.3s ease-in-out;
-  color: #510916;
-  background-color: rgb(226, 171, 171) !important;
-  border: 2px outset #510916;
+  background-color: #510916;
+  color: rgb(226, 171, 171) !important;
+  border: 2px outset rgb(226, 171, 171);
   width: 150px;
   height: 40px;
   text-align: center !important;
@@ -174,9 +196,9 @@
   text-decoration: none !important;
   /* text-shadow: 1px 1px 1px white; */
   transition: all 0.3s ease-in-out;
-  color: #510916;
-  background-color: rgb(226, 171, 171) !important;
-  border: 2px outset #510916;
+  background-color: #510916;
+  color: rgb(226, 171, 171) !important;
+  border: 2px outset rgb(226, 171, 171);
   width: 135px;
   height: 40px;
   text-align: center !important;
@@ -186,23 +208,29 @@
 }
 
 .genre-button:hover {
-  color: rgb(226, 171, 171);
-  background-color: #510916 !important;
+  background-color: rgb(226, 171, 171);
+  color: #510916 !important;
   /* box-shadow: 2px 2px 2px #510916; */
-  border: 2px outset rgb(226, 171, 171);
+  border: 2px outset #510916;
 }
 .director-button:hover {
-  color: rgb(226, 171, 171);
-  background-color: #510916 !important;
+  background-color: rgb(226, 171, 171);
+  color: #510916 !important;
   /* box-shadow: 2px 2px 2px #510916; */
-  border: 2px outset rgb(226, 171, 171);
+  border: 2px outset #510916;
 }
 
 .button-add-favorite:hover {
-  color: rgb(226, 171, 171);
-  background-color: #510916 !important;
+  background-color: rgb(226, 171, 171) !important;
+  color: #510916 !important;
   /* box-shadow: 2px 2px 2px #510916; */
-  border: 2px outset rgb(226, 171, 171);
+  border: 2px outset #510916 !important;
+}
+
+.home-button:hover {
+  color: #510916;
+  background-color: rgb(226, 171, 171) !important;
+  border: 2px outset #510916;
 }
 
 a {
