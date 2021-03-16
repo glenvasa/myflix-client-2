@@ -14,12 +14,14 @@
   background-color: rgba(0, 0, 0, 0.6) !important;
   /* z-index: -30; */
   padding: 20px 20px 0px !important;
+  margin-right: 30px !important;
+  margin-bottom: 30px !important;
 }
 
 .movie-title {
   font-family: Abril Fatface !important;
   margin: 0px 0 20px !important;
-  font-size: 24px !important;
+  font-size: 32px !important;
   text-transform: uppercase;
   background-color: transparent;
 
@@ -33,34 +35,44 @@
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid white;
-  box-shadow: 3px 3px 3px 3px white;
+  /* box-shadow: 3px 3px 3px 3px white; */
+  height: 450px !important;
   /* padding: 5px; */
   /* background-color: rgba(128, 128, 128, 0.5); */
   /* background-color: #510916; */
   background-color: white;
-  border-radius: 0px !important;
+  border-radius: 2px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-image:hover {
+  transform: scaleX(1.05) scaleY(1.05);
 }
 
 .movie-card-button {
   font-family: Abril Fatface;
   font-size: 20px;
   /* margin: auto !important; */
-  padding-bottom: 10px;
+  padding: 0px;
   z-index: 1000;
   text-decoration: none !important;
   /* text-shadow: 1px 1px 1px white; */
   transition: all 0.3s ease-in-out;
-  color: rgb(226, 171, 171);
-  background-color: #510916;
-  box-shadow: 2px 2px 2px rgb(226, 171, 171);
-  width: 80%;
-  margin-top: 10px;
+  color: #510916;
+  background-color: rgb(226, 171, 171);
+  /* box-shadow: 2px 2px 2px rgb(226, 171, 171); */
+  width: 150px;
+  height: 40px;
+  margin-top: 3px;
+  margin-bottom: 10px !important;
+  border: 2px outset #510916;
 }
 
 .movie-card-button:hover {
-  color: #510916;
-  background-color: rgba(226, 171, 171);
-  box-shadow: 2px 2px 2px #510916;
+  color: rgba(226, 171, 171);
+  background-color: #510916;
+  /* box-shadow: 2px 2px 2px #510916; */
+  border: 2px outset rgba(226,171,171)
 }
 
 .movie-card-body {
