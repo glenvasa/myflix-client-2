@@ -1,29 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Staatliches&display=swap");
 
-body {
-  background-color: #e4ecf2;
-  font-family: staatliches;
+.movie-view {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: repeat(5, 1fr);
+ margin-left: 30%;
+ margin-right: 30%;
 }
 
-.movie-poster-section {
-  float: left;
-  text-align: center;
+.mv-card {
+  /* margin: 100px auto 0px !important; */
+  height: 710px !important;
+  width: 400px;
+}
+
+/* .movie-poster-section {
+  /* float: left; */
+  /* text-align: center;
   margin-left: 7em;
   /* margin-top: .3em; */
-  margin-right: 2em;
-}
+  /* margin-right: 2em;  */
+ 
 
 .button-add-favorite {
-  margin: 1em auto;
+  display: flex;
+  align-items: center;
+  font-family: Abril Fatface;
+  font-size: 20px;
+  margin: 0px auto 10px !important;
+  text-decoration: none !important;
+  /* text-shadow: 1px 1px 1px white; */
+  transition: all 0.3s ease-in-out;
+ 
+  border: 2px outset #510916;
+  width: 180px;
+  height: 40px;
+  color: #510916;
+  background-color: rgb(226, 171, 171) !important;
 }
 
-.movie-poster {
-  width: 300px;
+.movie-view-image {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-shadow: none !important;
+  height: 500px !important;
+  /* padding: 5px; */
+  /* background-color: rgba(128, 128, 128, 0.5); */
+  /* background-color: #510916; */
+  background-color: white;
+  border-radius: 2px !important;
+  transition: all 0.3s ease-in-out;
+  margin: auto !important
+}
+
+.movie-view-image:hover {
+  transform: scaleX(1.05) scaleY(1.05);
 }
 
 .movie-info {
-  margin-top: 50px;
-  margin-left: 250px;
+  margin-top: 20px;
+  width: 300px;
 }
 
 .movie-title {
@@ -33,39 +71,114 @@ body {
   font-size: 35px;
 }
 
+.movie-card-body {
+  text-align: center;
+  
+}
+
 .movie-description {
-  width: 75%;
+  font-family: Abril Fatface;
+  margin: auto;
   margin-bottom: 10px;
-  margin-left: 20px;
+  width: 130%;
   font-size: 20px;
+  color: rgba(256,256,256,.9);
+  text-shadow: 3px 3px 15px black;
+  /* background-color: black; */
+  text-align: normal;
+}
+
+.movie-view-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px;
+  width: 100%;
 }
 
 .movie-genre {
+  font-family: Abril Fatface;
   margin-bottom: 10px;
   margin-left: 20px;
   font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
 .movie-director {
+  font-family: Abril Fatface;
   margin-bottom: 10px;
   margin-left: 20px;
   font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
-.home-button {
+/* .home-button {
   display: inline-block;
   margin-left: 5px;
-}
+  text-decoration: none !important; */
+/* text-shadow: 1px 1px 1px white; */
+/* transition: all 0.3s ease-in-out;
+  color: rgb(226, 171, 171);
+  background-color: #510916;
+  border: 1px solid rgb(226, 171, 171);
+} */
 
 .director-button {
+  font-family: Abril Fatface;
+  font-size: 20px;
   display: flex;
+  text-decoration: none !important;
+ 
+  transition: all 0.3s ease-in-out;
+  color: #510916;
+  background-color: rgb(226, 171, 171) !important;
+  border: 2px outset #510916;
+  width: 150px;
+  height: 40px;
+  text-align: center !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .genre-button {
+  font-family: Abril Fatface;
+  font-size: 20px;
   display: flex;
+  text-decoration: none !important;
+  /* text-shadow: 1px 1px 1px white; */
+  transition: all 0.3s ease-in-out;
+  color: #510916;
+  background-color: rgb(226, 171, 171) !important;
+  border: 2px outset #510916;
+  width: 135px;
+  height: 40px;
+  text-align: center !important;
+  text-decoration: none !important;
+  justify-content: center;
+  align-items: center;
 }
 
-.genre-button,
-.director-button {
-  color: white;
+.genre-button:hover {
+  color: rgb(226, 171, 171);
+  background-color: #510916 !important;
+  /* box-shadow: 2px 2px 2px #510916; */
+  border: 2px outset rgb(226, 171, 171);
+}
+.director-button:hover {
+  color: rgb(226, 171, 171);
+  background-color: #510916 !important;
+  /* box-shadow: 2px 2px 2px #510916; */
+  border: 2px outset rgb(226, 171, 171);
+}
+
+.button-add-favorite:hover {
+  color: rgb(226, 171, 171);
+  background-color: #510916 !important;
+  /* box-shadow: 2px 2px 2px #510916; */
+  border: 2px outset rgb(226, 171, 171);
+}
+
+a {
+  text-decoration: none !important;
 }
