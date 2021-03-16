@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import NavBar from '../navbar/navbar'
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 // import Container from 'react-bootstrap/Container';
@@ -83,6 +83,8 @@ export function ProfileUpdate(props) {
   };
 
   return (
+    <>
+    <NavBar/>
     <div className="profile-update">
       <h3>Update Your Profile</h3>
 
@@ -163,6 +165,7 @@ export function ProfileUpdate(props) {
         </Link>
       </div>
     </div>
+    </>
   );
 }
 
