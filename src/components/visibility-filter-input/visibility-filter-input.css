@@ -5,10 +5,10 @@
   z-index: 1000 !important;
   position: fixed;
   top: -75px !important;
-  /* laptop position
-  left: 380px; */
+  /* laptop position */
+  left: 380px;
   /* larger desktop position */
-  left: 570px;
+  /* left: 570px; */
   /* desktop position */
   /* left: 450px; */
   border: 2px inset black;
