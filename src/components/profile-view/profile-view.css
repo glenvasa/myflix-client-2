@@ -1,44 +1,136 @@
 .favorite-movies {
   display: inline-block;
-  margin-right: 1em;
+  
   margin-bottom: 1em;
+  border: 2px solid rgba(206, 89, 55, 1);
+  box-shadow: 4px 2px 5px rgba(206, 89, 55, 1); 
+  /* background-image: url("image.png");
+  background-size: cover; */
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  /* z-index: -30; */
+  padding: 20px 20px 0px !important;
+  margin-left: 55px !important;
+  margin-bottom: 30px !important;
+  height: 400px;
 }
 
 .favorite-movies-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  color: rgb(226, 171, 171);
+  text-shadow: 3px 3px 3px rgba(206, 89, 55, 1);
+  font-family: Abril Fatface;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.fav-movies-poster {
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px white;
 }
 
 .card-img-top {
-  height: 350px;
-}
-
-.button-primary {
-  margin-right: 1em;
+  height: 300px;
 }
 
 .profile-view {
-  margin-top: 5em;
-  /* width: 31%; */
+  width: 40%;
+  margin: 100px auto 0px;
+  background: transparent;
+  z-index: 1000 !important;
+  position: fixed;
+  top: -96px !important;
+  /* laptop position */
+  /* left: 380px; */
+  /* larger desktop position */
+  /* left: 570px; */
+  /* desktop position */
+  left: 450px;
+  /* border: 2px inset black; */
+  font-family: Abril Fatface;
+  
+  padding: 0 !important;
+  height: 80px;
+
 }
 
-.profile-view .card-body {
-  padding-left: 1em;
-  padding-right: 0;
+.profile-view-container {
+  background-color: transparent;
+  height: 50px;
+  width: 40%;
+  position: fixed;
+  top: 10px;
+  left: 300px;
+  z-index: 2000;
+  padding: 0 !important;
+  
 
-  /* text-align: center; */
 }
+
+
+.profile-credentials {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -20px;
+ 
+}
+
+
 
 .profile-text {
+  font-family: Abril Fatface;
+  color: white;
   height: 0.5em;
-  font-size: 1.3em;
+  font-size: 22px;
+   text-shadow: 3px 3px 5px black;
+}
+
+.profile-text-shadow {
+ 
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 .profile-button {
-  background: #690f38;
+  font-family: Abril Fatface;
+  background: transparent;
   margin-top: 0.3em;
+  border: none !important;
+  color: rgb(226, 171, 171);
 }
 
+.profile-button:hover {
+  color: black;
+  background-color: white !important;
+}
+
+.fav-movie-info,
+.fav-movie-remove {
+  font-family: Abril Fatface;
+  text-decoration: none !important;
+    color:rgba(206, 89, 55, 1) !important;
+    /* background-color: rgba(256, 256, 256, 0.7); */
+    transition: all .3s ease-in-out;
+    
+}
+
+.fav-movie-info:hover,
+.fav-movie-remove:hover {
+  font-family: Abril Fatface;
+  text-decoration: none !important;
+    color: black !important;
+    background-color: white;
+}
+
+.profile-card-buttons {
+
+  display: flex;
+  justify-content: space-between !important;
+  margin-top: -15px;
+}
+/* 
 @media all and (max-width: 530px) {
   .profile-view {
     width: 75%;
@@ -73,4 +165,4 @@
   .profile-view {
     width: 31%;
   }
-}
+} */
