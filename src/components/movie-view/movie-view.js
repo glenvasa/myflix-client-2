@@ -33,7 +33,10 @@ export class MovieView extends React.Component {
 
   render() {
     const { movie } = this.props;
-
+    // localStorage.setItem('id', movie.id)
+    console.log(movie._id);
+    JSON.stringify(localStorage.setItem("id", this.props.movie._id));
+    // JSON.stringify(localStorage.setItem("id", id ))
     if (!movie) return null;
 
     return (
@@ -41,14 +44,13 @@ export class MovieView extends React.Component {
         <NavBar />
         <div className="movie-view">
           <div className="movie-view-content">
-          <section>
+            <section>
               {" "}
               <div className="movie-description">
                 {/* <span className="label">Description: </span> */}
                 <span className="value">{movie.Description}</span>
               </div>
-
-              </section>
+            </section>
             <section className="movie-view-card">
               <Card className="movie-card mv-card mt-3 rounded">
                 <Card.Title className="movie-title">{movie.Title}</Card.Title>
@@ -61,8 +63,8 @@ export class MovieView extends React.Component {
                 <Card.Body className="movie-card-body"></Card.Body>
               </Card>
             </section>
-            
-              <section>
+
+            <section>
               <div className="movie-view-buttons">
                 <div className="genre-director-buttons">
                   <div className="movie-director">
@@ -80,13 +82,22 @@ export class MovieView extends React.Component {
                     </Link>
                   </div>
                 </div>
-                <Button
-                  onClick={() => this.addToFavoriteMovies(movie)}
-                  className="button-add-favorite"
-                  style={{ background: "#690f38" }}
-                >
-                  Add to Favorites
-                </Button>
+                <div className="favorites-home-buttons">
+                  <div className="favorites-button-container">
+                    <Button
+                      onClick={() => this.addToFavoriteMovies(movie)}
+                      className="button-add-favorite"
+                      style={{ background: "#690f38" }}
+                    >
+                      Add to Favorites
+                    </Button>
+                  </div>
+                  <div className="home-button-container">
+                    <Link to={`/`}>
+                      <Button className="home-button"> Home</Button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
