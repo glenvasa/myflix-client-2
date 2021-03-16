@@ -40,55 +40,56 @@ export class MovieView extends React.Component {
       <>
         <NavBar />
         <div className="movie-view">
-          <section className="movie-view-card">
-            <Card
-      
-              className="movie-card mv-card mt-3 rounded"
-            >
-              <Card.Title className="movie-title">{movie.Title}</Card.Title>
-              <Card.Img
-                variant="top"
-                src={movie.ImagePath}
-                className="movie-view-image"
-              />
-             
+          <div className="movie-view-content">
+          <section>
+              {" "}
+              <div className="movie-description">
+                {/* <span className="label">Description: </span> */}
+                <span className="value">{movie.Description}</span>
+              </div>
 
-              <Card.Body className="movie-card-body">
-            <div className="movie-view-buttons">
-              <div className="movie-director">
-                {/* <span className="label">Director: </span>
-                <span className="value">{movie.Director.Name}</span> */}
-                <Link to={`/directors/${movie.Director.Name}`}>
-                  <Button className="director-button">Director Info</Button>
-                </Link>
-              </div>
-              <div className="movie-genre">
-                {/* <span className="label">Genre: </span>
-                <span className="value">{movie.Genre.Name}</span> */}
-                <Link to={`/genres/${movie.Genre.Name}`}>
-                  <Button className="genre-button"> Genre Info</Button>
-                </Link>
-              </div>
-            </div>
-             <Button
-                onClick={() => this.addToFavoriteMovies(movie)}
-                className="button-add-favorite"
-                style={{ background: "#690f38" }}
-              >
-                Add to Favorites
-              </Button>
-              </Card.Body>
-             
-            </Card>
-          </section>
-          <section className="movie-info">
-            {" "}
+              </section>
+            <section className="movie-view-card">
+              <Card className="movie-card mv-card mt-3 rounded">
+                <Card.Title className="movie-title">{movie.Title}</Card.Title>
+                <Card.Img
+                  variant="top"
+                  src={movie.ImagePath}
+                  className="movie-view-image"
+                />
+
+                <Card.Body className="movie-card-body"></Card.Body>
+              </Card>
+            </section>
             
-            <div className="movie-description">
-              {/* <span className="label">Description: </span> */}
-              <span className="value">{movie.Description}</span>
-            </div>
-          </section>
+              <section>
+              <div className="movie-view-buttons">
+                <div className="genre-director-buttons">
+                  <div className="movie-director">
+                    {/* <span className="label">Director: </span>
+                <span className="value">{movie.Director.Name}</span> */}
+                    <Link to={`/directors/${movie.Director.Name}`}>
+                      <Button className="director-button">Director Info</Button>
+                    </Link>
+                  </div>
+                  <div className="movie-genre">
+                    {/* <span className="label">Genre: </span>
+                <span className="value">{movie.Genre.Name}</span> */}
+                    <Link to={`/genres/${movie.Genre.Name}`}>
+                      <Button className="genre-button"> Genre Info</Button>
+                    </Link>
+                  </div>
+                </div>
+                <Button
+                  onClick={() => this.addToFavoriteMovies(movie)}
+                  className="button-add-favorite"
+                  style={{ background: "#690f38" }}
+                >
+                  Add to Favorites
+                </Button>
+              </div>
+            </section>
+          </div>
         </div>
       </>
     );
