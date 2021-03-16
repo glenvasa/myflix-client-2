@@ -38,7 +38,10 @@ function NavBar() {
             } */}
             
             <Nav.Link as={Link} to="/users/:Username" className="navbar-link">
-              Profile
+              {window.location.pathname.includes('Username')
+              ? ""
+             : "Profile"
+            }
             </Nav.Link>
             <Nav.Link
             onClick={onLogOut}
