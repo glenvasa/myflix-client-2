@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import NavBar from '../navbar/navbar'
+import NavBar from "../navbar/navbar";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -94,71 +94,88 @@ export class ProfileView extends React.Component {
 
     return (
       <>
-      <NavBar/>
-      <Container>
-        {/* <h2 className="profile-title">Profile Page of {this.state.Username}</h2> */}
-        <Card className="profile-view">
-          <Card.Body>
-            <Card.Text className="profile-text">
-              Username: {this.state.Username}
-            </Card.Text>
-            <Card.Text className="profile-text">
-              Email: {this.state.Email}
-            </Card.Text>
-            {/* <Card.Text className='profile-text'>Birthdate: {this.state.Birthdate}</Card.Text> */}
-            <div className="profile-buttons">
-              <Link to={"/users/:userId/update"}>
-                <Button className="profile-button to-update-profile-button">
-                  Update Profile
-                </Button>
-              </Link>
-              <Button
-                onClick={() => this.deleteUser()}
-                className="profile-button to-delete-profile-button ml-1"
-              >
-                Delete Profile
-              </Button>
-              <Link to={"/"}>
-                <Button className="profile-button profile-home-button ml-1">
-                  Home
-                </Button>
-              </Link>
-            </div>
-          </Card.Body>
-        </Card>
-        <Container>
-          <h3 className="favorite-movies-title">Your Favorite Movies</h3>
-          {FavoriteMoviesList.map((movie) => {
-            return (
-              <Card
-                key={movie._id}
-                style={{ width: "15rem" }}
-                className="favorite-movies"
-              >
-                <Card.Img
-                  variant="top"
-                  src={movie.ImagePath}
-                  className="fav-movies-poster"
-                />
-                <Card.Body>
-                  <Link to={`/movies/${movie._id}`}>
-                    <Button variant="link" className="fav-movie-info">
-                      Movie Info
+        <NavBar />
+        {/* <Container> */}
+          <div className="profile-view-container">
+            {/* <h2 className="profile-title">Profile Page of {this.state.Username}</h2> */}
+            <Card className="profile-view">
+              <Card.Body>
+                <div className="profile-credentials">
+  <Card.Text className="profile-text">
+                  username: <span className="profile-text-shadow">{this.state.Username}  </span>
+                </Card.Text>
+                <Card.Text className="profile-text">
+                  email: <span className="profile-text-shadow">{this.state.Email}  </span>
+                </Card.Text>
+                {/* <Card.Text className='profile-text'>Birthdate: {this.state.Birthdate}</Card.Text> */}
+
+                </div>
+              
+                <div className="profile-buttons">
+                  <Link to={"/users/:userId/update"}>
+                    <Button className="profile-button to-update-profile-button">
+                      Update Profile
                     </Button>
                   </Link>
                   <Button
-                    variant="link"
-                    className="fav-movie-remove"
-                    onClick={() => this.deleteFavoriteMovie(movie)}
+                    onClick={() => this.deleteUser()}
+                    className="profile-button to-delete-profile-button"
                   >
-                    Remove Movie
+                    Delete Profile
                   </Button>
-                </Card.Body>
-              </Card>
-            );
-          })}
-        </Container>
-      </Container>
+                  <Link to={"/"}>
+                    <Button className="profile-button profile-home-button">
+                      Home
+                    </Button>
+                  </Link>
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
+
+          {/* <Container> */}
+        
+            {/* <h2 className="profile-title">
+              Profile Page of {this.state.Username}
+            </h2>  */}
+            <h3 className="favorite-movies-title">Your Favorite Movies</h3>
+            <div className="fav-movies-card-container">
+              
+            </div>
+           
+            {FavoriteMoviesList.map((movie) => {
+              return (
+                <Card
+                  key={movie._id}
+                  style={{ width: "15rem" }}
+                  className="favorite-movies"
+                >
+                  <Card.Img
+                    variant="top"
+                    src={movie.ImagePath}
+                    className="fav-movies-poster"
+                  />
+                  <Card.Body>
+                    <div className="profile-card-buttons">
+                      <Link to={`/movies/${movie._id}`}>
+                        <Button variant="link" className="fav-movie-info">
+                          Movie Info
+                        </Button>
+                      </Link>
+                      <Button
+                        variant="link"
+                        className="fav-movie-remove"
+                        onClick={() => this.deleteFavoriteMovie(movie)}
+                      >
+                        Remove Movie
+                      </Button>
+                    </div>
+                  </Card.Body>
+                </Card>
+              );
+            })}
+          {/* </Container> */}
+        {/* </Container> */}
       </>
     );
   }
