@@ -1,6 +1,9 @@
 .movies-list {
     /* z-index: -60 !important; */
-    margin-top: 100px !important;
+    margin-top: 80px !important;
+    /* laptop good - check desktop / mobile screens */
+    margin-left: 40px;
+    
     
 }
 
