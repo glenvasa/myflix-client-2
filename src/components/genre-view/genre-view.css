@@ -49,8 +49,8 @@
   font-family: Abril Fatface;
   color: rgb(226, 171, 171);
   text-shadow: 3px 3px 2px rgba(206, 89, 55, 1);
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 34px;
+  /* font-weight: bold; */
 
   text-align: center;
 }
