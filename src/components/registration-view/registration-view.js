@@ -86,12 +86,13 @@ export function RegistrationView(props) {
           <Form.Control
             type="text"
             value={username}
-            placeholder="Username"
+            className="input"
+            // placeholder="Username"
             onChange={(e) => setUsername(e.target.value)}
           />
           {Object.keys(usernameErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {usernameErr[key]}
               </div>
             );
@@ -103,12 +104,13 @@ export function RegistrationView(props) {
           <Form.Control
             type="password"
             value={password}
-            placeholder="Password"
+            className="input"
+            // placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
           {Object.keys(passwordErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {passwordErr[key]}
               </div>
             );
@@ -119,13 +121,14 @@ export function RegistrationView(props) {
           <Form.Label>Enter Email Address: </Form.Label>
           <Form.Control
             type="email"
-            placeholder="Email Address"
+            // placeholder="Email Address"
             value={email}
+            className="input"
             onChange={(e) => setEmail(e.target.value)}
           />
           {Object.keys(emailErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {emailErr[key]}
               </div>
             );
@@ -141,23 +144,24 @@ export function RegistrationView(props) {
             type="date"
             placeholder="YYYY-MM-DD"
             value={birthdate}
+            className="input"
             onChange={(e) => setBirthdate(e.target.value)}
           />
         </Form.Group>
-      </Form>
+      
       <div className="btns-reg">
-        <Button
+        <button
           type="submit"
-          variant="success"
           className="button-registration"
           onClick={handleRegister}
         >
-          Register
-        </Button>
+          REGISTER
+        </button>
         <Link to={"/"}>
-          <Button className="button-to-login">Login</Button>
+          <button className="button-to-login">LOGIN</button>
         </Link>
       </div>
+      </Form>
     </div>
   );
 }
