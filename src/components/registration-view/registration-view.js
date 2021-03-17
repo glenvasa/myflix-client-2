@@ -78,9 +78,10 @@ export function RegistrationView(props) {
 
   return (
     <div className="registration-view">
-      <h3>Register as a New MyFlix User</h3>
+      
 
       <Form className="registration-form">
+        <h3>Register for MyFlix</h3>
         <Form.Group controlId="formBasicUsername" className="registration-item">
           <Form.Label>Create Username: </Form.Label>
           <Form.Control
