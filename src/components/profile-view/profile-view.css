@@ -2,8 +2,8 @@
   display: inline-block;
   
   margin-bottom: 1em;
-  border: 2px solid rgba(206, 89, 55, 1);
-  box-shadow: 4px 2px 5px rgba(206, 89, 55, 1); 
+  border: 2px solid white;
+  box-shadow: 4px 2px 5px white; 
   /* background-image: url("image.png");
   background-size: cover; */
   background-color: rgba(0, 0, 0, 0.6) !important;
@@ -12,19 +12,33 @@
   margin-left: 55px !important;
   margin-bottom: 30px !important;
   height: 400px;
+  transition: all 1s ease-in-out;
 }
 
+/* .favorite-movies:hover{
+transform: skew(20deg);
+} */
+
 .favorite-movies-title {
-  color: rgb(226, 171, 171);
+  color: white;
   text-shadow: 3px 3px 3px rgba(206, 89, 55, 1);
   font-family: Abril Fatface;
   margin-top: 100px;
   margin-bottom: 40px;
 }
 
+/* .favorite-movies-title:hover + .favorite-movies{
+  transform: skew(20deg) !important;
+} */
+
 .fav-movies-poster {
   border: 2px solid white;
   box-shadow: 2px 2px 2px white;
+  transition: all .5s ease-in;
+}
+
+.fav-movies-poster:hover {
+  transform: skew(-20deg);
 }
 
 .card-img-top {
