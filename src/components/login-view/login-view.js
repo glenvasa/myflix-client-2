@@ -67,8 +67,8 @@ export function LoginView(props) {
       <h2>Welcome to MYFLIX!</h2>
 
       <Form className="login-form">
-        <Form.Group controlId="formBasicUsername" className="login-item m-auto">
-          <Form.Label className="form-label-username">
+        <Form.Group controlId="formBasicUsername" className="login-item">
+          <Form.Label>
             Enter Username:{" "}
           </Form.Label>
           <Form.Control
@@ -76,19 +76,19 @@ export function LoginView(props) {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             // placeholder="enter username"
-            className="form-input"
+            className="input"
           />
           {Object.keys(usernameErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {usernameErr[key]}
               </div>
             );
           })}
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword" className="login-item m-auto">
-          <Form.Label className="form-label-password">
+        <Form.Group controlId="formBasicPassword" className="login-item">
+          <Form.Label>
             Enter Password:{" "}
           </Form.Label>
           <Form.Control
@@ -96,29 +96,26 @@ export function LoginView(props) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             // placeholder="enter password"
-            className="form-input"
+            className="input"
           />
           {Object.keys(passwordErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {passwordErr[key]}
               </div>
             );
           })}
         </Form.Group>
         <div className="login-buttons">
-          <Button
+          <button
             onClick={handleSubmit}
-            variant="primary"
             type="submit"
             className="button-login mx-auto"
           >
             LOGIN
-          </Button>
+          </button>
           <Link to={"/register"}>
-            <Button variant="success" className="button-register ml-1">
-              REGISTER
-            </Button>
+            <button className="button-register ml-3">REGISTER</button>
           </Link>
         </div>
       </Form>
