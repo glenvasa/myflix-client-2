@@ -20,7 +20,7 @@ transform: skew(20deg);
 } */
 
 .favorite-movies-title {
-  color: white;
+  color: white !important;
   text-shadow: 3px 3px 3px rgba(206, 89, 55, 1);
   font-family: Abril Fatface;
   margin-top: 100px;
@@ -34,12 +34,16 @@ transform: skew(20deg);
 .fav-movies-poster {
   border: 2px solid white;
   box-shadow: 2px 2px 2px white;
-  transition: all .5s ease-in;
+  transition: all .2s ease-in-out;
 }
 
 .fav-movies-poster:hover {
-  transform: skew(-20deg);
+  transform: skew(5deg);
 }
+
+
+
+
 
 .card-img-top {
   height: 300px;
