@@ -46,18 +46,21 @@ transform: skew(20deg);
 }
 
 .profile-view {
-  width: 40%;
+  /* desktop width */
+  /* width: 40%; */
+  /* laptop width */
+  width: 50%;
   margin: 100px auto 0px;
   background: transparent;
   z-index: 1000 !important;
   position: fixed;
   top: -96px !important;
   /* laptop position */
-  /* left: 380px; */
+  left: 320px;
   /* larger desktop position */
   /* left: 570px; */
   /* desktop position */
-  left: 450px;
+  /* left: 450px; */
   /* border: 2px inset black; */
   font-family: Abril Fatface;
   
