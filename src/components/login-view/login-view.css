@@ -10,8 +10,8 @@ color2: #440951 */
 body {
   /* background-color: #e4ecf2; */
   /* font-family: staatliches; */
-  background-image: url("theater-4023278_1920.jpg");
   /* background-image: url("theater-4023278_1920.jpg"); */
+  background-image: url("image.png");
   background-size: cover;
 }
 
@@ -31,13 +31,14 @@ form {
   width: 550px;
   /* height: 450px; */
   margin: auto;
-  position: relative;
+ 
 }
 
 .login-form {
   border: 4px solid #440951;
   box-shadow: 1px 1px 1px 1px #440951;
-  background: url("image.png");
+  /* background: url("image.png"); */
+  background-color: rgba(256,256,256, .8);
   padding: 30px 0px 40px;
   border-radius: 10px;
   /* background-image: url("image.png"); */
@@ -45,25 +46,47 @@ form {
 }
 
 .form-label-username {
-  color: white;
-  position: absolute;
+  color: #510916;
+  /* position: absolute;
   top: 40px;
-  left: 110px;
-  text-shadow: 2px 2px 5px black;
+  left: 110px; */
+  font-size: 18px;
+  /* text-shadow: 2px 2px 5px black; */
 }
 
 .form-label-password {
-  color: white;
-  position: absolute;
+  color: #510916;
+  /* position: absolute;
   top: 120px;
-  left: 110px;
-  text-shadow: 2px 2px 5px black;
+  left: 110px; */
+  
+  font-size: 18px;
+  /* text-shadow: 2px 2px 5px black; */
 }
 
 .login-item {
+  margin: 0px auto !important;
   color: white;
   font-family: Abril Fatface;
+  width: 80%;
+
 }
+
+.login-item .input{
+  font-family: Abril Fatface;
+  color: white !important;
+  background-color: #510916!important;
+  opacity: 0.55 !important;
+  box-shadow: 2px 2px 2px 2px black !important;
+
+}
+
+.login-item label{
+  font-family: Abril Fatface;
+  color: #510916!important;
+  font-size: 18px;
+}
+
 
 input {
   width: 375px;
@@ -78,37 +101,47 @@ input {
 }
 
 .button-login {
+  width: 130px;
+  height: 35px;
+  border-radius: 2px;
+  font-family: Abril Fatface;
+  color: white;
   background-color: #510916;
   opacity: .9;
   /* background-image: url("theater-4023278_1920.jpg"); */
-  /* background-color: #3c0960; */
-  width: 130px;
-  font-family: Abril Fatface;
-  margin-right: 10px !important;
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: none !important
+  border: none !important;
 }
 
 .button-register {
   width: 130px;
+  height: 35px;
+  border-radius: 2px;
   font-family: Abril Fatface;
+  color: white;
   background-color: #510916;
   opacity: .9;
   /* background-image: url("theater-4023278_1920.jpg"); */
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: none !important
+  border: none !important;
 }
 
 .button-login:hover,
-.button-register:hover {
+.button-register:hover
+ {
   /* transform: scaleX() scaleY(); */
   color: #440951;
   background-color: white;
   border: 1px solid #440951;
+}
+
+.button-login:visited,
+.button-register:visited {
+  border-color:  white !important
 }
 
 .login-view {
@@ -123,18 +156,25 @@ input {
   position: relative;
   width: 60%;
   margin: 40px auto;
+
 }
 
 #formBasicUsername {
   color: white;
-  background-color: #440951;
+  background-color: #510916;
   opacity: 0.55;
   box-shadow: 2px 2px 2px 2px black;
 }
 
 #formBasicPassword {
   color: white;
-  background-color: #440951;
+  background-color: #510916;
   opacity: 0.55;
   box-shadow: 2px 2px 2px 2px black;
+}
+
+.validation-error{
+  font-family: Abril Fatface;
+  margin-top: -10px !important;
+  margin-bottom: 3px;
 }
