@@ -86,21 +86,23 @@ export function ProfileUpdate(props) {
     <>
     <NavBar/>
     <div className="profile-update">
-      <h3>Update Your Profile</h3>
+      
 
-      <Form className="update-form">
+      <Form className="update-form"> 
+       <h3>Update Your Profile</h3>
         <Form.Group controlId="formBasicUsername" className="update-item">
           <Form.Label>Username: </Form.Label>
           <Form.Control
             type="text"
             value={username}
-            placeholder="Update Username"
+            className="input"
+            // placeholder="Update Username"
             onChange={(e) => updateUsername(e.target.value)}
           />
           {/* <Form.Text className="text-muted">Must be alphanumberic and have a minimum of 5 characters.</Form.Text> */}
           {Object.keys(usernameErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {usernameErr[key]}
               </div>
             );
@@ -108,17 +110,18 @@ export function ProfileUpdate(props) {
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword" className="update-item">
-          <Form.Label>Update Password: </Form.Label>
+          <Form.Label>Password: </Form.Label>
           <Form.Control
             type="password"
             value={password}
-            placeholder="Update Password"
+            className="input"
+            // placeholder="Update Password"
             onChange={(e) => updatePassword(e.target.value)}
           />
           {/* <Form.Text className="text-muted">Suggested that password have at least 8 characters.</Form.Text> */}
           {Object.keys(passwordErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {passwordErr[key]}
               </div>
             );
@@ -129,13 +132,14 @@ export function ProfileUpdate(props) {
           <Form.Label>Email Address: </Form.Label>
           <Form.Control
             type="email"
-            placeholder="Update Email"
+            className="input"
+            // placeholder="Update Email"
             value={email}
             onChange={(e) => updateEmail(e.target.value)}
           />
           {Object.keys(emailErr).map((key) => {
             return (
-              <div key={key} style={{ color: "red" }}>
+              <div className="validation-error" key={key} style={{ color: "red" }}>
                 {emailErr[key]}
               </div>
             );
@@ -146,24 +150,26 @@ export function ProfileUpdate(props) {
           <Form.Label>Date of Birth: </Form.Label>
           <Form.Control
             type="date"
+            className="input"
             placeholder="YYYY-MM-DD"
             value={birthdate}
             onChange={(e) => updateBirthdate(e.target.value)}
           />
         </Form.Group>
-      </Form>
+      
       <div className="btns-update">
-        <Button
+        <button
           type="submit"
           className="button-update-profile"
           onClick={handleUpdate}
         >
-          Submit
-        </Button>
+          SUBMIT
+        </button>
         <Link to={"/users/:userId"}>
-          <Button className="button-cancel">Cancel</Button>
+          <button className="button-cancel">CANCEL</button>
         </Link>
       </div>
+      </Form>
     </div>
     </>
   );
