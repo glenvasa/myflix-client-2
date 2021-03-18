@@ -154,12 +154,14 @@ export class ProfileView extends React.Component {
               Profile Page of {this.state.Username}
             </h2>  */}
         <h3 className="favorite-movies-title">Your Favorite Movies</h3>
-        {/* <div className="fav-movies-card-container"></div> */}
+       
 {FavoriteMoviesList.length === 0 
         ? <div className="no-favorites">None yet. Go add some movies!</div>
         : null
       }
-        {FavoriteMoviesList.map((movie) => {
+      
+       <div className="fav-movies-card-container">
+  {FavoriteMoviesList.map((movie) => {
           return (
             <Card
               key={movie._id}
@@ -190,6 +192,12 @@ export class ProfileView extends React.Component {
             </Card>
           );
         })}
+
+
+
+
+       </div>
+      
 
         {/* </Container> */}
         {/* </Container> */}
