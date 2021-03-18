@@ -5,17 +5,14 @@
 color1: #3244cb
 color2: #440951 */
 
-
-
 body {
   /* background-color: #e4ecf2; */
   /* font-family: staatliches; */
   /* background-image: url("theater-4023278_1920.jpg"); */
   background-image: url("image.png");
   background-size: cover;
+  height: 100%;
 }
-
-
 
 h2 {
   font-family: Abril Fatface;
@@ -31,38 +28,17 @@ form {
   width: 550px;
   /* height: 450px; */
   margin: auto;
- 
 }
 
 .login-form {
   border: 4px solid #440951;
   box-shadow: 1px 1px 1px 1px #440951;
   /* background: url("image.png"); */
-  background-color: rgba(256,256,256, 1);
+  background-color: rgba(256, 256, 256, 1);
   padding: 30px 0px 40px;
   border-radius: 10px;
   /* background-image: url("image.png"); */
   /* background-image: url("th.jfif") */
-}
-
-.form-label-username {
-  
-  color: #510916;
-  /* position: absolute;
-  top: 40px;
-  left: 110px; */
-  font-size: 18px;
-  /* text-shadow: 2px 2px 5px black; */
-}
-
-.form-label-password {
-  color: #510916;
-  /* position: absolute;
-  top: 120px;
-  left: 110px; */
-  
-  font-size: 18px;
-  /* text-shadow: 2px 2px 5px black; */
 }
 
 .login-item {
@@ -70,24 +46,25 @@ form {
   color: white;
   font-family: Abril Fatface;
   width: 80%;
-
 }
 
-.login-item .input{
+.login-item .input {
   font-family: Abril Fatface;
   color: white !important;
-  background-color: #510916!important;
+  background: url("image.png");
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
-
 }
 
-.login-item label{
+.login-item label {
   font-family: Abril Fatface;
-  color: #510916!important;
+  color: #510916 !important;
+  /* background: url("image.png");
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+   */
   font-size: 18px;
 }
-
 
 input {
   width: 375px;
@@ -107,14 +84,25 @@ input {
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  background-color: #440951;
+  background-image: url("image.png");
+  /* background-color: #440951; */
   opacity: 1;
   /* background-image: url("theater-4023278_1920.jpg"); */
-  box-shadow: 2px 2px 2px black;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 2px #510916;
+  transition: all 1s ease-in-out;
   /* border: 1px solid white; */
-  border: 2px #440951 !important;
+  border: 2px #510916 !important;
 }
+
+/* background: linear-gradient(
+    90deg,
+    rgba(46, 39, 170, 1) 0%,
+    rgba(168, 41, 193, 1) 41%,
+    rgba(44, 74, 203, 1) 61%,
+    rgba(199, 26, 198, 1)
+  ); */
+/* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 
 .button-register {
   width: 130px;
@@ -122,23 +110,28 @@ input {
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  background-color: #440951;
+  /* background-color: #440951; */
+  background-image: url("image.png");
   opacity: 1;
   /* background-image: url("theater-4023278_1920.jpg"); */
-  box-shadow: 2px 2px 2px black;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 2px #510916;
+  transition: all 1s ease-in-out;
   /* border: 1px solid white; */
-  border: 2px #440951 !important;
+  border: 2px #510916 !important;
 }
 
-.button-login:hover,
-.button-register:hover
- {
-  /* transform: scaleX() scaleY(); */
-  color: #440951;
-  background-color: white;
-  border: 2px solid #440951 !important;
-}
+/* .button-login:hover + .button-register
+ { */
+/* transform: scaleX() scaleY(); */
+/* color: #440951; */
+/* background-image: none;
+  background-color: white; */
+/* color:rgba(206, 89, 55, 1); */
+/* text-shadow: 1px 1px 1px rgba(226, 171, 171); */
+/* color: red;
+  transform: translateX(100px); */
+/* border: 2px solid rgba(226, 171, 171) !important; */
+/* } */
 /* 
 .button-login:visited,
 .button-register:visited {
@@ -148,16 +141,12 @@ input {
 .login-view {
   /* background: transparent; */
   width: 100vw;
-  
-  
- 
 }
 
 .form-input {
   position: relative;
   width: 60%;
   margin: 40px auto;
-
 }
 
 #formBasicUsername {
@@ -174,7 +163,7 @@ input {
   box-shadow: 2px 2px 2px 2px black;
 }
 
-.validation-error{
+.validation-error {
   font-family: Abril Fatface;
   margin-top: -10px !important;
   margin-bottom: 3px;
