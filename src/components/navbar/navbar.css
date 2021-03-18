@@ -1,42 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 .brand-myflix {
-  color:  white !important;
+  color: white !important;
   font-family: Abril Fatface;
   text-shadow: 6px 6px 2px black;
   font-size: 40px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-top: 0px;
 }
 
-.brand-myflix:hover{
+.brand-myflix:hover {
   color: transparent !important;
   text-shadow: 6px 6px 2px white;
 }
 
- .navbar-link {
+.navbar-link {
   font-family: Abril Fatface;
   /* color: rgb(226, 171, 171) !important; */
 
   font-size: 24px;
   /* text-shadow: 1px 1px 2px black; */
   /* font-family: Abril Fatface; */
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin: auto 30px auto auto;
   text-shadow: 1px 1px 1px white;
 }
 
-.navbar-link:hover{
+.navbar-link:hover {
   color: white !important;
-  
 }
 
 /* .navbar-link:last-child:hover .navbar-link:first-child{
   color: white !important;
   
 } */
-
-
 
 .navbar-main {
   display: flex;
@@ -67,3 +64,19 @@
 .log-out-button:hover {
   cursor: pointer;
 }
+
+.navbar-links {
+  transition: all .3s ease-in-out;
+}
+
+.dropdown {
+  background-color: #510916;
+  width: 130px;
+  text-align: center;
+}
+
+/* @media all and (min-width: 767px) {
+  .nav-links {
+    background-color: transparent;
+  }
+} */
