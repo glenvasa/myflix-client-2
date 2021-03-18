@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import NavBar from '../navbar/navbar'
+import NavBar from "../navbar/navbar";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 // import Container from 'react-bootstrap/Container';
 import "./profile-update.css";
 
@@ -84,93 +84,103 @@ export function ProfileUpdate(props) {
 
   return (
     <>
-    <NavBar/>
-    <div className="profile-update">
-      
+      <NavBar />
+      <div className="profile-update">
+        <Form className="update-form">
+          <h3>Update Your Profile</h3>
+          <Form.Group controlId="formBasicUsername" className="update-item">
+            <Form.Label>Username: </Form.Label>
+            <Form.Control
+              type="text"
+              value={username}
+              className="input"
+              // placeholder="Update Username"
+              onChange={(e) => updateUsername(e.target.value)}
+            />
+            {/* <Form.Text className="text-muted">Must be alphanumberic and have a minimum of 5 characters.</Form.Text> */}
+            {Object.keys(usernameErr).map((key) => {
+              return (
+                <div
+                  className="validation-error"
+                  key={key}
+                  style={{ color: "red" }}
+                >
+                  {usernameErr[key]}
+                </div>
+              );
+            })}
+          </Form.Group>
 
-      <Form className="update-form"> 
-       <h3>Update Your Profile</h3>
-        <Form.Group controlId="formBasicUsername" className="update-item">
-          <Form.Label>Username: </Form.Label>
-          <Form.Control
-            type="text"
-            value={username}
-            className="input"
-            // placeholder="Update Username"
-            onChange={(e) => updateUsername(e.target.value)}
-          />
-          {/* <Form.Text className="text-muted">Must be alphanumberic and have a minimum of 5 characters.</Form.Text> */}
-          {Object.keys(usernameErr).map((key) => {
-            return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
-                {usernameErr[key]}
-              </div>
-            );
-          })}
-        </Form.Group>
+          <Form.Group controlId="formBasicPassword" className="update-item">
+            <Form.Label>Password: </Form.Label>
+            <Form.Control
+              type="password"
+              value={password}
+              className="input"
+              // placeholder="Update Password"
+              onChange={(e) => updatePassword(e.target.value)}
+            />
+            {/* <Form.Text className="text-muted">Suggested that password have at least 8 characters.</Form.Text> */}
+            {Object.keys(passwordErr).map((key) => {
+              return (
+                <div
+                  className="validation-error"
+                  key={key}
+                  style={{ color: "red" }}
+                >
+                  {passwordErr[key]}
+                </div>
+              );
+            })}
+          </Form.Group>
 
-        <Form.Group controlId="formBasicPassword" className="update-item">
-          <Form.Label>Password: </Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            className="input"
-            // placeholder="Update Password"
-            onChange={(e) => updatePassword(e.target.value)}
-          />
-          {/* <Form.Text className="text-muted">Suggested that password have at least 8 characters.</Form.Text> */}
-          {Object.keys(passwordErr).map((key) => {
-            return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
-                {passwordErr[key]}
-              </div>
-            );
-          })}
-        </Form.Group>
+          <Form.Group controlId="formBasicEmail" className="update-item">
+            <Form.Label>Email Address: </Form.Label>
+            <Form.Control
+              type="email"
+              className="input"
+              // placeholder="Update Email"
+              value={email}
+              onChange={(e) => updateEmail(e.target.value)}
+            />
+            {Object.keys(emailErr).map((key) => {
+              return (
+                <div
+                  className="validation-error"
+                  key={key}
+                  style={{ color: "red" }}
+                >
+                  {emailErr[key]}
+                </div>
+              );
+            })}
+          </Form.Group>
 
-        <Form.Group controlId="formBasicEmail" className="update-item">
-          <Form.Label>Email Address: </Form.Label>
-          <Form.Control
-            type="email"
-            className="input"
-            // placeholder="Update Email"
-            value={email}
-            onChange={(e) => updateEmail(e.target.value)}
-          />
-          {Object.keys(emailErr).map((key) => {
-            return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
-                {emailErr[key]}
-              </div>
-            );
-          })}
-        </Form.Group>
+          <Form.Group controlId="formBasicBirthdate" className="update-item">
+            <Form.Label>Date of Birth: </Form.Label>
+            <Form.Control
+              type="date"
+              className="input"
+              placeholder="YYYY-MM-DD"
+              value={birthdate}
+              onChange={(e) => updateBirthdate(e.target.value)}
+            />
+          </Form.Group>
 
-        <Form.Group controlId="formBasicBirthdate" className="update-item">
-          <Form.Label>Date of Birth: </Form.Label>
-          <Form.Control
-            type="date"
-            className="input"
-            placeholder="YYYY-MM-DD"
-            value={birthdate}
-            onChange={(e) => updateBirthdate(e.target.value)}
-          />
-        </Form.Group>
-      
-      <div className="btns-update">
-        <button
-          type="submit"
-          className="button-update-profile"
-          onClick={handleUpdate}
-        >
-          SUBMIT
-        </button>
-        <Link to={"/users/:userId"}>
-          <button className="button-cancel">CANCEL</button>
-        </Link>
+          <div className="btns-update">
+            <button
+              type="submit"
+              className="button-update-profile"
+              onClick={handleUpdate}
+            >
+              SUBMIT
+            </button>
+            <Link to={"/users/:userId"}>
+              <button className="button-cancel">CANCEL</button>
+            </Link>
+          </div>
+        </Form>
       </div>
-      </Form>
-    </div>
     </>
   );
 }
