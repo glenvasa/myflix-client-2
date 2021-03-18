@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import "./registration-view.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -78,8 +78,6 @@ export function RegistrationView(props) {
 
   return (
     <div className="registration-view">
-      
-
       <Form className="registration-form">
         <h3>Register for MyFlix</h3>
         <Form.Group controlId="formBasicUsername" className="registration-item">
@@ -93,7 +91,11 @@ export function RegistrationView(props) {
           />
           {Object.keys(usernameErr).map((key) => {
             return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
+              <div
+                className="validation-error"
+                key={key}
+                style={{ color: "red" }}
+              >
                 {usernameErr[key]}
               </div>
             );
@@ -111,7 +113,11 @@ export function RegistrationView(props) {
           />
           {Object.keys(passwordErr).map((key) => {
             return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
+              <div
+                className="validation-error"
+                key={key}
+                style={{ color: "red" }}
+              >
                 {passwordErr[key]}
               </div>
             );
@@ -129,7 +135,11 @@ export function RegistrationView(props) {
           />
           {Object.keys(emailErr).map((key) => {
             return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
+              <div
+                className="validation-error"
+                key={key}
+                style={{ color: "red" }}
+              >
                 {emailErr[key]}
               </div>
             );
@@ -149,19 +159,19 @@ export function RegistrationView(props) {
             onChange={(e) => setBirthdate(e.target.value)}
           />
         </Form.Group>
-      
-      <div className="btns-reg">
-        <button
-          type="submit"
-          className="button-registration"
-          onClick={handleRegister}
-        >
-          REGISTER
-        </button>
-        <Link to={"/"}>
-          <button className="button-to-login">LOGIN</button>
-        </Link>
-      </div>
+
+        <div className="btns-reg">
+          <button
+            type="submit"
+            className="button-registration"
+            onClick={handleRegister}
+          >
+            REGISTER
+          </button>
+          <Link to={"/"}>
+            <button className="button-to-login">LOGIN</button>
+          </Link>
+        </div>
       </Form>
     </div>
   );
