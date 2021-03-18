@@ -57,16 +57,24 @@ export class ProfileView extends React.Component {
     this.getUser(accessToken);
   }
 
-  // deleteUser() {
-  //   if (!confirm('Do you really want to delete your profile?')) return;
-  //   axios.delete(`https://myflix2020.herokuapp.com/users/${localStorage.getItem('user')}`, {
-  //     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
-  //   })
-  //     .then((res) =>
-  //       console.log(res))
-  //   alert('Your profile has been deleted')
-  //   this.onLoggedOut();
-  // }
+  deleteUser = async() => {
+    if (window.confirm("Do you really want to delete your profile?")) {
+     await axios
+        .delete(
+          `https://myflix2020.herokuapp.com/users/${localStorage.getItem(
+            "user"
+          )}`,
+          {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+          }
+        )
+        .then((res) => console.log(res));
+      alert("Your profile has been deleted");
+      this.onLoggedOut();
+    }
+  }
 
   deleteFavoriteMovie(movie) {
     const token = localStorage.getItem("token");
