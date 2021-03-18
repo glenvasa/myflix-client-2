@@ -57,9 +57,9 @@ export class ProfileView extends React.Component {
     this.getUser(accessToken);
   }
 
-  deleteUser = async() => {
+  deleteUser = async () => {
     if (window.confirm("Do you really want to delete your profile?")) {
-     await axios
+      await axios
         .delete(
           `https://myflix2020.herokuapp.com/users/${localStorage.getItem(
             "user"
@@ -74,7 +74,7 @@ export class ProfileView extends React.Component {
       alert("Your profile has been deleted");
       this.onLoggedOut();
     }
-  }
+  };
 
   deleteFavoriteMovie(movie) {
     const token = localStorage.getItem("token");
@@ -152,7 +152,12 @@ export class ProfileView extends React.Component {
               Profile Page of {this.state.Username}
             </h2>  */}
         <h3 className="favorite-movies-title">Your Favorite Movies</h3>
-        <div className="fav-movies-card-container"></div>
+        {/* <div className="fav-movies-card-container"></div> */}
+        {FavoriteMoviesList.length === 0 ? (
+          <div className="no-favorites">None yet. Go add some movies!</div>
+        ) : (
+          ""
+        )}
 
         {FavoriteMoviesList.map((movie) => {
           return (
