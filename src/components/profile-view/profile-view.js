@@ -100,6 +100,8 @@ export class ProfileView extends React.Component {
       userFavoriteMovies.includes(movie._id)
     );
 
+    let userId = localStorage.getItem("user");
+
     return (
       <>
         <NavBar />
@@ -125,7 +127,7 @@ export class ProfileView extends React.Component {
               </div>
 
               <div className="profile-buttons">
-                <Link to={"/users/:userId/update"}>
+                <Link to={`/users/${userId}/update`}>
                   <Button className="profile-button to-update-profile-button">
                     Update Profile
                   </Button>
@@ -153,12 +155,10 @@ export class ProfileView extends React.Component {
             </h2>  */}
         <h3 className="favorite-movies-title">Your Favorite Movies</h3>
         {/* <div className="fav-movies-card-container"></div> */}
-        {FavoriteMoviesList.length === 0 ? (
-          <div className="no-favorites">None yet. Go add some movies!</div>
-        ) : (
-          ""
-        )}
-
+{FavoriteMoviesList.length === 0 
+        ? <div className="no-favorites">None yet. Go add some movies!</div>
+        : null
+      }
         {FavoriteMoviesList.map((movie) => {
           return (
             <Card
@@ -190,6 +190,7 @@ export class ProfileView extends React.Component {
             </Card>
           );
         })}
+
         {/* </Container> */}
         {/* </Container> */}
       </>
