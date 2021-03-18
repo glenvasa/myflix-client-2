@@ -151,6 +151,13 @@ transform: skew(20deg);
   justify-content: space-between !important;
   margin-top: -15px;
 }
+
+.no-favorites {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
 /* 
 @media all and (max-width: 530px) {
   .profile-view {
