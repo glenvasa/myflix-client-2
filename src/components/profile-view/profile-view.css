@@ -1,9 +1,9 @@
 .favorite-movies {
   display: inline-block;
-  
+
   margin-bottom: 1em;
   border: 2px solid white;
-  box-shadow: 4px 2px 5px white; 
+  box-shadow: 4px 2px 5px white;
   /* background-image: url("image.png");
   background-size: cover; */
   background-color: rgba(0, 0, 0, 0.6) !important;
@@ -34,16 +34,12 @@ transform: skew(20deg);
 .fav-movies-poster {
   border: 2px solid white;
   box-shadow: 2px 2px 2px white;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .fav-movies-poster:hover {
   transform: skew(5deg);
 }
-
-
-
-
 
 .card-img-top {
   height: 300px;
@@ -60,17 +56,83 @@ transform: skew(20deg);
   position: fixed;
   top: -96px !important;
   /* laptop position */
-  left: 320px;
+  /* left: 320px; */
   /* larger desktop position */
-  /* left: 570px; */
-  /* desktop position */
   /* left: 450px; */
+  /* desktop position */
+  left: 380px;
   /* border: 2px inset black; */
   font-family: Abril Fatface;
-  
+
   padding: 0 !important;
   height: 80px;
+}
 
+@media all and (min-width: 300px) {
+  .profile-view {
+    left: 250px;
+  }
+  .fav-movies-card-container {
+    margin-left: 0px;
+  }
+}
+
+@media all and (min-width: 1089px) {
+  .profile-view {
+    left: 200px;
+  }
+  .fav-movies-card-container {
+    margin-left: 0px;
+  }
+}
+
+@media all and (min-width: 1142px) {
+  .profile-view {
+    left: 290px;
+  }
+  .fav-movies-card-container {
+    margin-left: 150px;
+  }
+}
+
+@media all and (min-width: 1319px) {
+  .profile-view {
+    left: 285px;
+  }
+}
+
+@media all and (min-width: 1536px) {
+  .profile-view {
+    left: 380px;
+  }
+  .fav-movies-card-container {
+    margin-left: 100px;
+  }
+
+  @media all and (min-width: 1717px) {
+    .profile-view {
+      left: 410px;
+    }
+  }
+}
+
+@media all and (min-width: 1917px) {
+  .profile-view {
+    left: 470px;
+  }
+  .fav-movies-card-container {
+    margin-left: 43px;
+  }
+}
+
+@media all and (min-width: 2505px) {
+  .profile-view {
+    left: 600px;
+  }
+
+  .fav-movies-card-container {
+    margin-left: 40px;
+  }
 }
 
 .profile-view-container {
@@ -79,39 +141,33 @@ transform: skew(20deg);
   width: 40%;
   position: fixed;
   top: 10px;
+
   left: 300px;
+
   z-index: 2000;
   padding: 0 !important;
-  
-
 }
-
 
 .profile-credentials {
   display: flex;
   justify-content: space-evenly;
   margin-top: -20px;
- 
 }
-
-
 
 .profile-text {
   font-family: Abril Fatface;
   color: white;
   height: 0.5em;
   font-size: 22px;
-   text-shadow: 3px 3px 5px black;
+  text-shadow: 3px 3px 5px black;
 }
 
 .profile-text-shadow {
- 
 }
 
 .profile-buttons {
   display: flex;
   justify-content: space-around;
-  
 }
 
 .profile-button {
@@ -131,22 +187,20 @@ transform: skew(20deg);
 .fav-movie-remove {
   font-family: Abril Fatface;
   text-decoration: none !important;
-    color:rgba(206, 89, 55, 1) !important;
-    /* background-color: rgba(256, 256, 256, 0.7); */
-    transition: all .3s ease-in-out;
-    
+  color: rgba(206, 89, 55, 1) !important;
+  /* background-color: rgba(256, 256, 256, 0.7); */
+  transition: all 0.3s ease-in-out;
 }
 
 .fav-movie-info:hover,
 .fav-movie-remove:hover {
   font-family: Abril Fatface;
   text-decoration: none !important;
-    color: black !important;
-    background-color: white;
+  color: black !important;
+  background-color: white;
 }
 
 .profile-card-buttons {
-
   display: flex;
   justify-content: space-between !important;
   margin-top: -15px;
