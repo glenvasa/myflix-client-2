@@ -6,16 +6,15 @@
   position: fixed;
   top: -75px !important;
   /* laptop position */
-  left: 380px;
+  /* left: 380px; */
   /* larger desktop position */
-  /* left: 570px; */
+  left: 580px;
   /* desktop position */
   /* left: 450px; */
   border: 2px inset black;
   font-family: Abril Fatface;
   color: white;
   font-weight: bolder;
-
 }
 
 .filter-container {
@@ -26,11 +25,10 @@
   top: 10px;
   left: 300px;
   z-index: 2000;
-
 }
 
-@media all and (max-width: 1080px){
-  .visibility-filter{
+@media all and (max-width: 1080px) {
+  .visibility-filter {
     left: 310px;
   }
   .filter-container {
