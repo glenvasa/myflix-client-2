@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 // import { RegistrationView } from '../registration-view/registration-view';
 
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./login-view.css";
 
@@ -62,15 +62,29 @@ export function LoginView(props) {
     return isValid;
   };
 
+  const buttonAnimation = (e) => {
+    const regButton = document.querySelector(".button-register");
+    const loginButton = document.querySelector(".button-login");
+    if (e.target.classList.contains("button-login")) {
+      regButton.style.transform = "translateY(-600px) translateX(800px)";
+      loginButton.addEventListener("mouseout", () => {
+        regButton.style.transform = "translateY(0px) translateX(0px)";
+      });
+    } else {
+      loginButton.style.transform = "translateX(-1000px)";
+      regButton.addEventListener("mouseout", () => {
+        loginButton.style.transform = "translateX(0px)";
+      });
+    }
+  };
+
   return (
     <div className="login-view">
       <h2>Welcome to MYFLIX!</h2>
 
       <Form className="login-form">
         <Form.Group controlId="formBasicUsername" className="login-item">
-          <Form.Label>
-            Enter Username:{" "}
-          </Form.Label>
+          <Form.Label>Enter Username: </Form.Label>
           <Form.Control
             type="text"
             value={username}
@@ -80,7 +94,11 @@ export function LoginView(props) {
           />
           {Object.keys(usernameErr).map((key) => {
             return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
+              <div
+                className="validation-error"
+                key={key}
+                style={{ color: "red" }}
+              >
                 {usernameErr[key]}
               </div>
             );
@@ -88,9 +106,7 @@ export function LoginView(props) {
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword" className="login-item">
-          <Form.Label>
-            Enter Password:{" "}
-          </Form.Label>
+          <Form.Label>Enter Password: </Form.Label>
           <Form.Control
             type="password"
             value={password}
@@ -100,7 +116,11 @@ export function LoginView(props) {
           />
           {Object.keys(passwordErr).map((key) => {
             return (
-              <div className="validation-error" key={key} style={{ color: "red" }}>
+              <div
+                className="validation-error"
+                key={key}
+                style={{ color: "red" }}
+              >
                 {passwordErr[key]}
               </div>
             );
@@ -108,6 +128,9 @@ export function LoginView(props) {
         </Form.Group>
         <div className="login-buttons">
           <button
+            onMouseOver={(e) => {
+              buttonAnimation(e);
+            }}
             onClick={handleSubmit}
             type="submit"
             className="button-login mx-auto"
@@ -115,7 +138,14 @@ export function LoginView(props) {
             LOGIN
           </button>
           <Link to={"/register"}>
-            <button className="button-register ml-3">REGISTER</button>
+            <button
+              onMouseOver={(e) => {
+                buttonAnimation(e);
+              }}
+              className="button-register ml-3"
+            >
+              REGISTER
+            </button>
           </Link>
         </div>
       </Form>
