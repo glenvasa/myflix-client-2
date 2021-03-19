@@ -96,11 +96,7 @@ export function LoginView(props) {
           />
           {Object.keys(usernameErr).map((key) => {
             return (
-              <div
-                className="validation-error"
-                key={key}
-                style={{ color: "red" }}
-              >
+              <div className="validation-error" key={key}>
                 {usernameErr[key]}
               </div>
             );
@@ -118,11 +114,7 @@ export function LoginView(props) {
           />
           {Object.keys(passwordErr).map((key) => {
             return (
-              <div
-                className="validation-error"
-                key={key}
-                style={{ color: "red" }}
-              >
+              <div className="validation-error" key={key}>
                 {passwordErr[key]}
               </div>
             );
