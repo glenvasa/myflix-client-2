@@ -34,7 +34,7 @@ form {
   border: 2px solid black;
   box-shadow: 2px 2px 5px black;
   /* background: url("image.png"); */
-  background-color: rgba(256, 256, 256, .1);
+  background-color: rgba(256, 256, 256, 0.1);
   padding: 30px 0px 40px;
   border-radius: 10px;
   /* background-image: url("image.png"); */
@@ -52,10 +52,10 @@ form {
 .login-item .input {
   font-family: Abril Fatface;
   color: white !important;
-  background-color: #510916 !important;
+  background-color: #440951 !important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .login-item label {
@@ -67,7 +67,7 @@ form {
   -webkit-text-fill-color: transparent; 
    */
   font-size: 18px;
-  margin-top: 30px !important;
+  margin-top: 20px !important;
 }
 
 input {
@@ -77,8 +77,8 @@ input {
 }
 
 .login-buttons {
-  margin-top: 50px;
-  margin-bottom: 10px !important;
+  margin-top: 60px;
+  margin-bottom: 0px !important;
   text-align: center;
 }
 
@@ -87,17 +87,17 @@ input {
   height: 35px;
   border-radius: 2px;
   font-family: Abril Fatface;
-  color: white;
-  background-image: url("image.png");
-  
+  color: #440951;
+  /* background-image: url("image.png"); */
+
   /* background-color: #510916; */
-  /* background-color: #440951; */
+  background-color: white;
   opacity: 1;
   /* background-image: url("theater-4023278_1920.jpg"); */
   box-shadow: 2px 2px 2px black;
   transition: all 1s ease-in-out;
   /* border: 1px solid white; */
-  border: 2px black !important;
+  border: 1px solid #440951 !important;
 }
 
 /* background: linear-gradient(
@@ -116,28 +116,28 @@ input {
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  /* background-color: #440951; */
-  background-image: url("image.png");
-  
+  background-color: #440951;
+  /* background-image: url("image.png"); */
+
   /* background-color: #510916; */
   opacity: 1;
   /* background-image: url("theater-4023278_1920.jpg"); */
   box-shadow: 2px 2px 2px black;
   transition: all 1s ease-in-out;
   /* border: 1px solid white; */
-  border: 2px black !important;
+  border: 1px solid #440951 !important;
 }
 
 /* .button-login:hover,
 .button-register:hover { */
-  /* transform: scaleX() scaleY(); */
-  /* color: white; */
+/* transform: scaleX() scaleY(); */
+/* color: white; */
 
-  /* background-image: url("image.png"); */
-  /* background-image: none;
+/* background-image: url("image.png"); */
+/* background-image: none;
   background-color: #440951; */
 
-  /* box-shadow: 2px 2px 2px #440951;
+/* box-shadow: 2px 2px 2px #440951;
 
   border: 2px #440951 !important;
 } */
@@ -157,19 +157,19 @@ input {
   margin: 40px auto;
 }
 
-#formBasicUsername {
+/* #formBasicUsername {
   color: white !important;
   background-color: #510916;
   opacity: 1;
   box-shadow: 2px 2px 2px 2px black;
-}
+} */
 
-#formBasicPassword {
+/* #formBasicPassword {
   color: white !important;
   background-color: #510916;
   opacity: 1;
   box-shadow: 2px 2px 2px 2px black;
-}
+} */
 
 .validation-error {
   font-family: Abril Fatface;
