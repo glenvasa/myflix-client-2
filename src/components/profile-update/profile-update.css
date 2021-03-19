@@ -74,8 +74,8 @@
 
 .update-item .input{
   font-family: Abril Fatface;
-  color: white !important;
-  background-color: #510916!important;
+  color: black !important;
+  background-color: white!important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
   margin-bottom: 40px !important
