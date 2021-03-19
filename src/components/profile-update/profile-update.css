@@ -58,7 +58,7 @@
   border: 2px solid black;
   box-shadow: 2px 2px 5px black;
   /* background: url("image.png"); */
-  background-color: rgba(256,256,256, .2);
+  background-color: rgba(256,256,256, .1);
   padding: 30px 0px 40px;
   border-radius: 10px;
   width: 30%;
@@ -74,8 +74,8 @@
 
 .update-item .input{
   font-family: Abril Fatface;
-  color: black !important;
-  background-color: white!important;
+  color: white !important;
+  background-color: #510916!important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
   margin-bottom: 40px !important
