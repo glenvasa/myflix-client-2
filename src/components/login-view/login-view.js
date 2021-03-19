@@ -67,7 +67,7 @@ export function LoginView(props) {
     const loginButton = document.querySelector(".button-login");
     // const loginInput = document.querySelector('.login-item .input')
     if (e.target.classList.contains("button-login")) {
-      regButton.style.transform = "translateY(-600px) translateX(800px)";
+      regButton.style.transform = "translateY(-700px) translateX(800px)";
       loginButton.addEventListener("mouseout", () => {
         regButton.style.transform = "translateY(0px) translateX(0px)";
         // loginInput.style.background = "#510916"
