@@ -43,7 +43,7 @@ form {
 
 .login-item {
   margin: 0px auto !important;
-  color: black;
+  color: white;
   /* background-color: white !important; */
   font-family: Abril Fatface;
   width: 80%;
@@ -52,7 +52,7 @@ form {
 .login-item .input {
   font-family: Abril Fatface;
   color: white !important;
-  background-color: white !important;
+  background-color: #510916 !important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
   transition: all .3s ease-in-out;
@@ -158,14 +158,14 @@ input {
 }
 
 #formBasicUsername {
-  color: black !important;
+  color: white !important;
   background-color: #510916;
   opacity: 1;
   box-shadow: 2px 2px 2px 2px black;
 }
 
 #formBasicPassword {
-  color: black !important;
+  color: white !important;
   background-color: #510916;
   opacity: 1;
   box-shadow: 2px 2px 2px 2px black;
@@ -175,4 +175,6 @@ input {
   font-family: Abril Fatface;
   margin-top: -10px !important;
   margin-bottom: 3px;
+  color: rgba(216, 9, 61, 1);
+  text-shadow: 1px 1px 10px white;
 }
