@@ -1,6 +1,6 @@
 .profile-update h3{
-  color: #440951 !important;
-  text-shadow: none;
+  color: white !important;
+  text-shadow: 4px 4px 3px black;
   font-family: Abril Fatface;
   margin-bottom: 30px;
   margin-top: 0px;
@@ -9,18 +9,18 @@
 
 .btns-update {
   text-align: center;
-  margin-top: 35px;
+  margin-top: 60px;
   margin-bottom: -10px;
 }
 
 .button-update-profile:hover,
 .button-cancel:hover {
-  /* transform: scaleX() scaleY(); */
+  transform: scaleX(1.05) scaleY(1.05);
  
   cursor: pointer;
-  color: #440951 !important;
+ 
   background-color: white;
-  border: 2px solid #440951  !important;
+  
 }
 
 .button-update-profile {
@@ -29,14 +29,14 @@
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  background-color: #440951;
+  /* background-color: #440951; */
   opacity: 1;
-  /* background-image: url("theater-4023278_1920.jpg"); */
+  background-image: url("image.png");
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: 2px solid #440951 !important;
-  margin-right: 8px;
+  border: 1px solid black !important;
+  margin-right: 15px;
 }
 
 .button-cancel {
@@ -45,26 +45,26 @@
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  background-color: #440951;
+  /* background-color: #440951; */
   opacity: 1;
-  /* background-image: url("theater-4023278_1920.jpg"); */
+  background-image: url("image.png");
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: 2px solid #440951 !important;
+  border: 1px solid black !important;
 }
 
 .update-form{
-  border: 4px solid #440951;
-  box-shadow: 1px 1px 1px 1px #440951;
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px black;
   /* background: url("image.png"); */
-  background-color: rgba(256,256,256,1);
+  background-color: rgba(256,256,256, .2);
   padding: 30px 0px 40px;
   border-radius: 10px;
   width: 30%;
   height: 80%;
   /* laptop margin */
-  margin-top: 90px;
+  margin-top: 110px;
 }
 
 .update-item {
@@ -78,11 +78,13 @@
   background-color: #510916!important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
+  margin-bottom: 40px !important
 
 }
 
 .update-item label{
   font-family: Abril Fatface;
-  color: #510916!important;
-  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 16px;
 }
