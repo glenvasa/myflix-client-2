@@ -33,10 +33,8 @@ export class MovieView extends React.Component {
 
   render() {
     const { movie } = this.props;
-    // localStorage.setItem('id', movie.id)
-    console.log(movie._id);
-    JSON.stringify(localStorage.setItem("id", this.props.movie._id));
-    // JSON.stringify(localStorage.setItem("id", id ))
+    JSON.stringify(localStorage.setItem("id", movie._id));
+  
     if (!movie) return null;
 
     return (
