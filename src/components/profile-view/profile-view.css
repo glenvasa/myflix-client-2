@@ -176,6 +176,7 @@ transform: skew(20deg);
   margin-top: 0.3em;
   border: none !important;
   color: rgb(226, 171, 171);
+  font-size: 17px !important;
 }
 
 .profile-button:hover {
