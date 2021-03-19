@@ -1,4 +1,4 @@
-.profile-update h3{
+.profile-update h3 {
   color: white !important;
   text-shadow: 4px 4px 3px black;
   font-family: Abril Fatface;
@@ -16,26 +16,31 @@
 .button-update-profile:hover,
 .button-cancel:hover {
   transform: scaleX(1.05) scaleY(1.05);
- 
+
   cursor: pointer;
- 
-  background-color: white;
-  
+
+  /* background-color: white; */
 }
+
+/* .button-update-profile:visited,
+.button-cancel:visited
+                         {
+ text-decoration: none !important;
+} */
 
 .button-update-profile {
   width: 130px;
   height: 35px;
   border-radius: 2px;
   font-family: Abril Fatface;
-  color: white;
-  /* background-color: #440951; */
+  color: #440951;
+  background-color: white;
   opacity: 1;
-  background-image: url("image.png");
+  /* background-image: url("image.png"); */
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: 1px solid black !important;
+  border: 1px solid #440951 !important;
   margin-right: 15px;
 }
 
@@ -45,20 +50,20 @@
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  /* background-color: #440951; */
+  background-color: #440951;
   opacity: 1;
-  background-image: url("image.png");
+  /* background-image: url("image.png"); */
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: 1px solid black !important;
+  border: 1px solid #440951 !important;
 }
 
-.update-form{
+.update-form {
   border: 2px solid black;
   box-shadow: 2px 2px 5px black;
   /* background: url("image.png"); */
-  background-color: rgba(256,256,256, .1);
+  background-color: rgba(256, 256, 256, 0.1);
   padding: 30px 0px 40px;
   border-radius: 10px;
   width: 30%;
@@ -72,17 +77,16 @@
   margin: 0px auto;
 }
 
-.update-item .input{
+.update-item .input {
   font-family: Abril Fatface;
   color: white !important;
-  background-color: #510916!important;
+  background-color: #440951 !important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
-  margin-bottom: 40px !important
-
+  margin-bottom: 40px !important;
 }
 
-.update-item label{
+.update-item label {
   font-family: Abril Fatface;
   color: white;
   text-shadow: 2px 2px 5px black;
