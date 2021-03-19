@@ -92,9 +92,9 @@ export function RegistrationView(props) {
           {Object.keys(usernameErr).map((key) => {
             return (
               <div
-                className="validation-error"
+                className="validation-error reg-error"
                 key={key}
-                style={{ color: "red" }}
+               
               >
                 {usernameErr[key]}
               </div>
@@ -114,9 +114,9 @@ export function RegistrationView(props) {
           {Object.keys(passwordErr).map((key) => {
             return (
               <div
-                className="validation-error"
+                className="validation-error reg-error"
                 key={key}
-                style={{ color: "red" }}
+                
               >
                 {passwordErr[key]}
               </div>
@@ -136,9 +136,9 @@ export function RegistrationView(props) {
           {Object.keys(emailErr).map((key) => {
             return (
               <div
-                className="validation-error"
+                className="validation-error reg-error"
                 key={key}
-                style={{ color: "red" }}
+           
               >
                 {emailErr[key]}
               </div>
