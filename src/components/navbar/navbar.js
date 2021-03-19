@@ -22,7 +22,7 @@ function NavBar() {
     });
   }, []);
 
-  let Username = localStorage.getItem("user")
+  let Username = localStorage.getItem("user");
 
   return (
     <div>
@@ -43,7 +43,11 @@ function NavBar() {
             : ''
             } */}
 
-            <Nav.Link as={Link} to={`/users/${Username}`} className="navbar-link">
+            <Nav.Link
+              as={Link}
+              to={`/users/${Username}`}
+              className="navbar-link"
+            >
               {window.location.pathname.includes("Username") ? "" : "Profile"}
             </Nav.Link>
             <Nav.Link onClick={onLogOut} className="navbar-link log-out">
