@@ -34,7 +34,7 @@ h3 {
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
   border: 1px solid black !important;
-  margin-right: 15px;
+  margin-right: 7px;
 }
 
 .button-to-login {
@@ -50,7 +50,7 @@ h3 {
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
   border: 1px solid black !important;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .button-registration:hover,
@@ -68,7 +68,7 @@ h3 {
   border: 2px solid black;
   box-shadow: 2px 2px 5px black;
   /* background: url("image.png"); */
-  background-color: rgba(256,256,256, .2);
+  background-color: rgba(256,256,256, .1);
   padding: 30px 0px 40px;
   border-radius: 10px;
   width: 30%;
@@ -83,8 +83,8 @@ h3 {
 
 .registration-item .input{
   font-family: Abril Fatface;
-  color: black !important;
-  background-color: white!important;
+  color: white !important;
+  background-color: #510916!important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
   margin-bottom: 40px !important;
@@ -96,4 +96,8 @@ h3 {
   color: white;
   text-shadow: 2px 2px 5px black;
   font-size: 16px;
+}
+
+.reg-error {
+ margin: -30px 0px 30px !important;
 }
