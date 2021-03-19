@@ -82,6 +82,9 @@ export function ProfileUpdate(props) {
     return isValid;
   };
 
+
+  let userId = localStorage.getItem("user");
+
   return (
     <>
       <NavBar />
@@ -175,7 +178,7 @@ export function ProfileUpdate(props) {
             >
               SUBMIT
             </button>
-            <Link to={"/users/:userId"}>
+            <Link to={`/users/${userId}`}>
               <button className="button-cancel">CANCEL</button>
             </Link>
           </div>
