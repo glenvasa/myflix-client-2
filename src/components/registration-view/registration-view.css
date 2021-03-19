@@ -26,14 +26,14 @@ h3 {
   height: 35px;
   border-radius: 2px;
   font-family: Abril Fatface;
-  color: white;
-  /* background-color: #440951; */
+  background-color: white;
+  color: #440951;
   opacity: 1;
-  background-image: url("image.png");
+  /* background-image: url("image.png"); */
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: 1px solid black !important;
+  border: 1px solid #440951 !important;
   margin-right: 7px;
 }
 
@@ -43,13 +43,13 @@ h3 {
   border-radius: 2px;
   font-family: Abril Fatface;
   color: white;
-  /* background-color: #440951; */
+  background-color: #440951;
   opacity: 1;
-  background-image: url("image.png");
+  /* background-image: url("image.png"); */
   box-shadow: 2px 2px 2px black;
   transition: all 0.3s ease-in-out;
   /* border: 1px solid white; */
-  border: 1px solid black !important;
+  border: 1px solid #440951 !important;
   margin-left: 8px;
 }
 
@@ -58,7 +58,7 @@ h3 {
   cursor: pointer;
   /* background-image: none !important; */
   /* color: black; */
-  background-color: white;
+  /* background-color: white; */
   transform: scaleX(1.05) scaleY(1.05);
   /* border: 2px solid #440951 !important; */
 }
@@ -84,7 +84,7 @@ h3 {
 .registration-item .input{
   font-family: Abril Fatface;
   color: white !important;
-  background-color: #510916!important;
+  background-color: #440951!important;
   opacity: 1 !important;
   box-shadow: 2px 2px 2px 2px black !important;
   margin-bottom: 40px !important;
