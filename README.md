@@ -7,8 +7,8 @@
 
 ## Screenshots
 
-<img src="src/images/Main-Movies-Screen.png"> 
-<img src="src/images/Profile-Screen.png">
+<img src="src/images/Screenshot (247).png"> 
+<img src="src/images/Screenshot (252).png">
 
 ## Features
 
@@ -22,7 +22,6 @@
 
 - Single-Page React Application (SPA).
 - React Routing used to navigate between views and share URLs.
-- Built with Parcel.
 - Developed with React, ES2015+, and React-Redux.
 - Uses Bootstrap UI library for styling and responsiveness.
 - Utilizes a mix of class and functional React components
