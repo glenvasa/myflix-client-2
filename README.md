@@ -1,6 +1,6 @@
 # MyFlix-Client (React/Redux)
 
-- Client-side application developed with React and Redux.
+- Client-side movies application developed with React and Redux.
 - Utilizes MyFlix REST API hosted at https://myflix2020.herokuapp.com. 
 - Server-side code is found at https://github.com/glenvasa/movie_api. 
 - MongoDB stores User and Movie Collections.
