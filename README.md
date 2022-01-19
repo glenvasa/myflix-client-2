@@ -29,3 +29,4 @@
 ## Deployed Application
 
 - https://myflix-react-2021.netlify.app/
+- (username: movies/ password: movies to test, or register a new user)
